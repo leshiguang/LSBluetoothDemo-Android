@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/item_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/device_image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center" >
+
+            <ImageView
+                android:id="@+id/device_image_view"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_device_pedometer" />
+
+            <TextView
+                android:id="@+id/protocol_type_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/device_image_view"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="kitchen"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/device_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/device_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="Device:405A034C64A0A"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_number_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/device_name_text_view"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="UserNumber:"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/device_mac_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/user_number_text_view"
+                android:layout_marginTop="10dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Mac:[F2:4A:DE:98:89:9A]"
+                android:textSize="10sp" />
+
+             <ProgressBar
+                 android:id="@+id/connecting_progress_bar"
+                 style="?android:attr/progressBarStyleInverse"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignTop="@+id/device_name_text_view"
+                 android:visibility="gone"
+                 android:padding="10dp" />
+
+             <TextView
+                 android:id="@+id/new_data_text_view"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentEnd="true"
+                 android:layout_centerVertical="true"
+                 android:padding="10dp"
+                 android:textSize="10sp"
+                 android:textColor="@android:color/holo_red_dark"
+                 android:text="new data"
+                 android:visibility="gone" />
+             
+        </RelativeLayout>
+
+    	
+        
+        
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="5dp"
+        android:background="#DADADC" >
+    </View>
+
+</LinearLayout>

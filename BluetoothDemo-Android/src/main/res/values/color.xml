@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+    <color name="app_overall_style_background">#F0F8FF</color>
+    <color name="edit_input_normal_background">#DCDCDC</color>
+    <!--old underscore_view_background= #FF8000 -->
+    <color name="underscore_view_background">#CD853F</color>
+    <color name="button_normal_background">#ffffffff</color>
+    
+     <color name="text_black_main">#CE000000</color>
+    <color name="text_black_sub">#8A000000</color>
+    <color name="text_black_shallow">#42000000</color>
+    <color name="text_white_main">#CEFFFFFF</color>
+    <color name="text_white_sub">#8AFFFFFF</color>
+    <color name="text_white_shallow">#42FFFFFF</color>
+    
+    <color name="grey">#FF9E9E9E</color>
+    <color name="grey_50">#FFFAFAFA</color>
+    <color name="grey_100">#FFF5F5F5</color>
+    <color name="grey_200">#FFEEEEEE</color>
+    <color name="grey_300">#FFE0E0E0</color>
+    
+     <color name="primary">#FF00BCD4</color>
+    <color name="primary_light">#FF4DD0E1</color>
+    <color name="primary_dark">#FF0097A7</color>
+    
+    
+     <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent</color>
+    
+    
+    <!--
+	贯穿全文的浅蓝色：74d1de 1fc0f8
+	微博登录红色按钮：e89382
+	60秒后重新发送按钮：a8acbb
+
+	图表灰色背景：eeeeee
+
+	圆环颜色（顺时针方向）
+	蓝色：91c9ee
+	深绿：8ed172
+	浅绿：b1da68
+	黄色：f2dd84
+	橙色：f6b874
+	桃红：ee756f
+	大红：e65b5b
+
+	图表血压，心率的字体颜色：
+	f19149
+
+	历史纪录圆圈颜色：
+	蓝：74d1de
+	橙：f6b874
+	黄：b0da68
+
+	历史记录时间灰色背景：f8f8f8
+	
+	f7882d
+    -->
+    <color name="ignore">#A9A9A9</color>
+
+    <color name="blue_title">#1eabe1</color>
+    <color name="weight_bkg_start">#00BADD</color>
+    <color name="weight_bkg_start2">#ff005BA6</color>
+    <color name="weight_bkg_start3">#ff2BC4FF</color>
+
+    <color name="default_main">#ffa93a</color>
+    <color name="default_gray">#999999</color>
+    <color name="second_orange">#ffa93a</color>
+    <color name="sencond_gray">#666666</color>
+    <color name="red">#f27d76</color>
+    <color name="green">#9eda52</color>
+    <color name="purple">#6b4fc3</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#808080</color>
+    <!-- 灰色 -->
+    <color name="bgchartgray">#eeeeee</color>
+    <!-- 图表背景：灰色 -->
+    <color name="chart_title">#f19149</color>
+    <color name="chart_grid">#b3b5bc</color>
+    <color name="chart_text">#959595</color>
+    <color name="chart_bp_line">#91c9ee</color>
+    <color name="chart_heartrate_line">#8ed172</color>
+    <color name="gray_bg">#cbcbcb</color>
+    <color name="shallow_orange">#f7bb6f</color>
+    <color name="sleep_text_gray">#4d9dd6</color>
+    <color name="gray_btn">#98999a</color>
+
+    <!-- 历史记录列表 -->
+    <color name="history_morning">#74d1de</color>
+    <color name="history_noon">#f6b874</color>
+    <color name="history_night">#b0da68</color>
+    <color name="history_none">#c7c7c7</color>
+
+    <!-- 二维码扫描 -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <!-- 透明 -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <!-- <color name="viewfinder_frame">#ff74d1de</color> -->
+    <color name="viewfinder_laser">#ffff0000</color>
+    <!-- <color name="viewfinder_mask">#60000000</color> -->
+    <color name="viewfinder_mask">#00000000</color>
+    <color name="translucent">#60000000</color>
+    <color name="weight_level_text">#ff404041</color>
+    <color name="track_text_gray_light">#999999</color>
+    <color name="track_text_gray_white">#cccccc</color>
+    <color name="track_text_gray">#666666</color>
+    <color name="track_text_gray_dark">#333333</color>
+    <color name="track_list_background">#f7f7f7</color>
+    <color name="track_list_line">#E5E5E5</color>
+    <color name="track_list_line_dark">#CCCCCC</color>
+    <color name="track_pause_green">#5dae3d</color>
+    <color name="track_pause_orange">#ffa93a</color>
+    <color name="login_text_orange">#fda847</color>
+    <color name="press_gray">#EEEEEE</color>
+    <color name="translucent_white">#30000000</color>
+    <!-- 状态栏 -->
+    <color name="colorPrimaryDark">#19ccf9</color>
+    <!-- 标题栏 -->
+    <color name="title_bg_orange">#ffa93a</color>
+    <color name="title_bg_gray">#4656b3</color>
+    <color name="title_text_green">#a2e10f</color>
+    <color name="title_text_purple">#bf92fd</color>
+    <color name="title_text_orange">#ffa93a</color>
+    <color name="title_text_red">#ffa93a</color>
+    <!-- 背景深灰色 用于文字、按钮等 -->
+    <color name="bg_deep_gray">#999999</color>
+    <!-- 背景灰色 -->
+    <color name="bg_gray">#eeeeee</color>
+    <color name="switch_text">#fda847</color>
+
+    <!-- 黑色 主要用于文字 -->
+    <color name="bg_black">#666666</color>
+    <color name="bg_deep_black">#333333</color>
+    <color name="text_blue">#1C86EE</color>
+
+    <!-- 分享背景 -->
+    <color name="share_bg_sleep">#83a1ad</color>
+    <color name="share_bg_sport">#96ded0</color>
+    <color name="share_bg_weight">#fcb040</color>
+    <color name="share_bg_heart">#a2a2a2</color>
+    <!-- 体重详情颜色 -->
+    <color name="weight_blue">#83d3f0</color>
+    <color name="weight_green">#a7dd3f</color>
+    <color name="weight_text">#ababab</color>
+    <color name="weight_text_light">#cfcfcf</color>
+    <color name="weight_background">#efeeee</color>
+    <color name="header_bg">#f6f6f6</color>
+    <color name="text_gray_ababab">#ababab</color>
+    <color name="text_gray_light_cfcfcf">#cfcfcf</color>
+    <color name="text_gray_light_d0d0d0">#d0d0d0</color>
+    <color name="text_gray_light_888888">#888888</color>
+    <color name="weight_text_gray">#ffb6b6b6</color>
+    <color name="weight_text_black">#ff414141</color>
+
+    <!-- 4种状态 -->
+    <color name="state_slim">#92eafe</color>
+    <color name="state_normal">#b2ed53</color>
+    <color name="state_heavy">#fcd113</color>
+    <color name="state_fat">#ff9525</color>
+    <color name="text_gray_c4c4c4">#c4c4c4</color>
+
+
+    <!-- jus for test module -->
+    <color name="gridlinehorizoncolor">#66ffffff</color>
+
+    <!-- 分割线的颜色-->
+    <color name="separation_line_color">#d9d9d9</color>
+
+    <!--睡眠3种状态-->
+    <color name="sleep1">#7180e3</color>
+    <color name="sleep2">#9da8ff</color>
+    <color name="sleep3">#bfc6f9</color>
+
+    <color name="sleep_textgray">#585858</color>
+    <color name="sleep_detail_textgray">#797979</color>
+    <color name="sleep_history_line">#ededed</color>
+
+    <color name="wheel_nomal">#b6b6b6</color>
+    <color name="wheel_press">#139acd</color>
+    <color name="sleep_title_color">#2F2062</color>
+    <color name="sleep_title_color2">#515ec0</color>
+    <color name="sleep_no_any_data_bg">#514676</color>
+
+    <color name="tv_import">#414141</color>
+    <color name="tv_normal">#797979</color>
+    <color name="tv_weak">#9b9b9b</color>
+    <color name="tv_line">#d9d9d9</color>
+    <color name="sleep_updatetime_bt_normal">#4454b1</color>
+    <color name="sleep_updatetime_bt_press">#4454b1</color>
+    <color name="sleep_updatetime_bt_disable">#9ea6d4</color>
+    <color name="sleep_updatetime_bt_textcolor">#A3E2FE</color>
+
+
+    <!--首页-->
+    <color name="main_night_start">#574391</color>
+    <color name="main_night_end">#152060</color>
+    <color name="main_day_start">#17A6DC</color>
+    <color name="main_day_end">#1EABE1</color>
+    <color name="main_white_75">#75ffffff</color>
+    <color name="main_white_50">#80ffffff</color>
+    <color name="main_white_24">#3Dffffff</color>
+    <color name="main_big_data_text">#414141</color>
+    <color name="main_small_data_text">#B6B6B6</color>
+    <color name="main_divider">#E1F1F6</color>
+    <color name="main_night_text_shadow">#416CCD</color>
+    <color name="main_day_text_shadow">#32B0C5</color>
+    <color name="main_circle_out_shadow">#32E2FF</color>
+    <color name="main_circle_in_shadow">#D1FFFFFF</color>
+    <color name="main_circle_in">#96EFEF</color>
+    <color name="main_pull_wrong">#F9764B</color>
+    <color name="main_pull_deep">#2ECDE3</color>
+    <color name="main_pull_light">#93D4E7</color>
+    <color name="white_55">#8AFFFFFF</color>
+    <color name="device_toggle_open">#9DE6F3</color>
+    <color name="device_toggle_border">#E5E5E5</color>
+    <color name="dialog_cancel">#ED4A5E</color>
+    <color name="dialog_alert_blue">#2DD0F9</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="device_blue_50">#8019ccf9</color>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#00bcfc</color>
+    <color name="default_circle_indicator_page_color">#ffffff</color>
+    <color name="default_circle_indicator_page_color2">#CC000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#ffffff</color>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <color name="guide_one">#00bcfc</color>
+    <color name="guide_one_light">#3bf2ee</color>
+    <color name="guide_two">#ff9f14</color>
+    <color name="guide_two_light">#e4e63b</color>
+    <color name="guide_three">#14A4A4</color>
+    <color name="guide_three_light">#3aede0</color>
+    <color name="duide_black_bg">#cc000000</color>
+    <color name="main_adapter_item_title_normal_color">#414141</color>
+    <color name="main_adapter_item_title_no_value_color">#CECECE</color>
+    <color name="main_tab_normal">#B6B6B6</color>
+    <color name="main_tab_selected">#257CE4</color>
+
+
+    <color name="target_linecolor">#d8d8d8</color>
+    <color name="target_blue_clor">#1eabe1</color>
+    <color name="target_blue_clor2">#221eabe1</color>
+
+    <color name="target_thin">#00addf</color>
+    <color name="target_normal">#65c31e</color>
+    <color name="target_little_fit">#ffb700</color>
+    <color name="target_fit">#fa6700</color>
+    <color name="sleep_deep">#6739AF</color>
+    <color name="sleep_shallow">#9e82ff</color>
+    <color name="sleep_wake">#f3e5ff</color>
+    <color name="sleep_main_color">#272062</color>
+    <color name="sleep_text_color">#B6B6B6</color>
+    <color name="sleep_main_text_color">#414141</color>
+    <color name="sleep_divider_color">#D9D9D9</color>
+    <color name="heart_loss_wp_color">#FFE400</color>
+    <color name="heart_loss_fat_color">#FFB500</color>
+    <color name="heart_stamina_color">#F26B08</color>
+    <color name="heart_super_color">#E51111</color>
+    <color name="heart_normal_color">#1AD4D0</color>
+
+    <color name="heart_bg_start">#0c7d9b</color>
+    <color name="heart_bg_end">#0c7d9b</color>
+    <color name="heart_no_data_title">#e53D9AB3</color>
+
+
+    <color name="weight_bg_start">#009ba4</color>
+    <color name="weight_bg_end">#00BEBA</color>
+    <color name="weight_title_color">#009ba4</color>
+
+    <color name="weight_seekbar_target_thin">#00C5FF</color>
+    <color name="weight_seekbar_target_normal">#6DE016</color>
+    <color name="weight_seekbar_target_little_fit">#FBC914</color>
+    <color name="weight_seekbar_target_fit">#FF871B</color>
+    <color name="weight_seekbar_background">#E8E8E8</color>
+    <color name="heart_chart_bg">#fbfbfb</color>
+    <color name="heart_chart_text_select">#0c7d9b</color>
+    <color name="heart_chart_text">#9b9b9b</color>
+    <color name="gray_df">#dfdfdf</color>
+
+
+    <color name="sport_title_color">#271a7b</color>
+    <color name="sport_nodata_title_color">#741d7b</color>
+    <color name="step_text_color">#414141</color>
+    <color name="step_divider_color">#D9D9D9</color>
+    <color name="step_no_data_color">#B6B6B6</color>
+    <color name="step_no_data_bg_color">#1EABE1</color>
+    <color name="step_first_use_bg_color">#4ABEEA</color>
+    <!-- 发布比赛-->
+    <color name="cmp_select_top_tip_bg">#D4D4D4</color>
+    <color name="cmp_select_top_tip_text">#969696</color>
+    <color name="cmp_select_title_textcolor">#2E2E2E</color>
+    <color name="cmp_select_tips_textcolor">#9A9A9A</color>
+    <color name="cmp_select_color">#FFFFFF</color>
+    <color name="cmp_select_color2">#414141</color>
+    <color name="cmp_select_color3">#B6B6B6</color>
+    <color name="cmp_select_line_color">#E9E9E9</color>
+    <color name="cmp_select_color4">#7A7A7A</color>
+    <color name="cmp_select_color5">#00AEE5</color>
+    <color name="cmp_select_color6">#E4E4E4</color>
+    <color name="cmp_select_color7">#F0F0F0</color>
+    <color name="cmp_select_color8">#A5A5A5</color>
+    <color name="cmp_select_color9">#99000000</color>
+    <color name="cmp_select_start_color">#FFBB27</color>
+    <color name="cmp_select_end_color">#FF8F00</color>
+    <color name="text_nomal_color">#FFFFFF</color>
+    <color name="text_nomal_gray_color">#B6B6B6</color>
+    <color name="text_pressd_color">#F0F0F0</color>
+
+    <color name="normal_text_color">#414141</color>
+    <color name="calorie_bg_color">#4CFFEF28</color>
+    <color name="calorie_line_color">#FFB102</color>
+
+    <color name="weight_fat_color">#99E9E9E9</color>
+    <color name="calorie_30_color">#10FFEF28</color>
+
+    <color name="level_start_color">#FFFFFF</color>
+    <color name="level_end_color">#77D9FF</color>
+    <color name="level_start_text_color">#1EABE1</color>
+    <color name="level_end_text_color">#0394CE</color>
+    <color name="growth_text_color">#FF414141</color>
+    <color name="growth_hins_text_color">#FFFFFF</color>
+    <color name="growth_divider_color">#D9D9D9</color>
+    <color name="growth_detail_desc_color">#B6B6B6</color>
+    <color name="transparent1">#00000000</color>
+    <color name="track_rank1">#ff4400</color>
+    <color name="track_rank2">#ffc800</color>
+    <color name="track_rank3">#71e300</color>
+
+    <!--按钮规范-->
+    
+    <color name="button_bg_origin_color">#1EABE1</color>
+    <color name="button_text_origin_color">#FFFFFF</color>
+    
+    <color name="button_bg_pressed_color">#1A99CA</color>
+    <color name="button_text_pressed_color">#1CCCE4</color>
+    
+    <color name="button_bg_forbidden_color">#E9E9E9</color>
+    <color name="button_text_forbidden_color">#A8A8A8</color>
+
+    <color name="item_text_weak">#B6B6B6</color>
+    <color name="seekbakcolor">#8ce0ff</color>
+    <color name="weight_confirm_color">#2A8CFF</color>
+
+    <color name="white3">#CCFFFFFF</color>
+    <color name="default_main_text_color">#414141</color>
+    <color name="weight_suggest_text_color">#999999</color>
+    <color name="white_99">#99FFFFFF</color>
+    <color name="white5">#4DFFFFFF</color>
+    <color name="white6">#7FFFFFFF</color>
+    <color name="white_00">#00FFFFFF</color>
+    <color name="bp_blue">#0AC5D9</color>
+    <color name="bs_blue">#6497F6</color>
+
+    <!--血压等级-->
+    <color name="blood_pressure_level_optimal">#3FB8E6</color>
+    <color name="blood_pressure_level_normal">#36D132</color>
+    <color name="blood_pressure_level_high_normal">#36D132</color>
+    <color name="blood_pressure_level_hypertension_1">#FBC228</color>
+    <color name="blood_pressure_level_hypertension_2">#FE8C3D</color>
+    <color name="blood_pressure_level_isolated">#D74040</color>
+
+    <!--血糖等级-->
+    <color name="blood_sugar_level_dangerously_low">#2E80E6</color>
+    <color name="blood_sugar_level_low">#23D5E6</color>
+    <color name="blood_sugar_level_normal">#36D132</color>
+    <color name="blood_sugar_level_borderline">#FBC228</color>
+    <color name="blood_sugar_level_hight">#FE8C3D</color>
+    <color name="blood_sugar_level_dangerously_hight">#D74040</color>
+    <color name="blood_out_bg">#F0F0F0</color>
+    <color name="blood_inner_blue">#1EABE1</color>
+    <color name="blood_line_blue">#3FC2F5</color>
+
+    <color name="title_background_color">#1eabe1</color>
+    <color name="edittext_common_blue">#0090FF</color>
+
+    <color name="default_image_color">#D9D9D9</color>
+
+    <color name="heart_rate_section1">#FFE400</color>
+    <color name="heart_rate_section2">#FFB500</color>
+    <color name="heart_rate_section3">#F26B08</color>
+    <color name="heart_rate_section4">#E51111</color>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/device_info_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/device_state_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/device_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="My Mambo"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/device_name_tv" >
+
+                        <TextView
+                            android:id="@+id/device_connect_state_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="10dp"
+                            android:text="未连接"
+                            android:textColor="#B6B6B6"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/device_battery_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/device_connect_state_tv"
+                            android:text="电量:80%"
+                            android:textColor="#CD6839"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/new_data_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="2 New Data"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/syncing_progress_bar"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/common_bg_gray" />
+
+        <ScrollView
+            android:id="@+id/device_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fadingEdge="none"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:scrollbars="none" >
+
+            <TextView
+                android:id="@+id/device_log_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="log info"
+                android:textSize="14sp"
+                android:paddingBottom="15dp"
+                android:visibility="gone" />
+
+            <!--
+            <LinearLayout
+                android:id="@+id/device_functions_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+            -->
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bluetooth.demo.DeviceFragment" >
+
+    <item
+        android:id="@id/fun_clear"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/str_fun_clear"/>
+    <item
+        android:id="@id/fun_connect"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/str_fun_connect"/>
+    <item
+        android:id="@id/fun_cancel_connect"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/str_fun_cancel_connect"/>
+    <item
+        android:id="@id/fun_device_info"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/str_fun_device_info"/>
+     <item
+        android:id="@id/fun_user_info"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/str_fun_user_info"/>
+        
+    <item
+        android:id="@id/fun_upgrade"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/str_fun_upgrade"/>
+
+</menu>

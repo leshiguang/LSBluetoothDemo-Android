@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--体质12项数据-->
+    <color name="weight_param_low_color">#00c5ff</color>
+    <color name="weight_param_normal_color">#0095FF</color>
+    <color name="weight_param_ideal_color">#6DE016</color>
+    <color name="weight_param_high_color">#ffa715</color>
+    <color name="weight_param_very_high_color">#ff7517</color>
+
+</resources>

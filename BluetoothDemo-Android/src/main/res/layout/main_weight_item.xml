@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_divid_white_gray"
+        android:paddingBottom="30dip"
+        android:paddingLeft="25dip"
+        android:paddingRight="18dip"
+        android:paddingTop="30dip">
+
+
+        <ImageView
+            android:id="@+id/main_common_icon"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_weight"/>
+
+        <LinearLayout
+            android:id="@+id/llValueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/main_common_icon"
+            android:gravity="bottom"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_common_type"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="体重数据"
+                android:textColor="#414141"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/main_big_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:textColor="@color/main_big_data_text"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/main_common_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/main_common_icon"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/img_tips_a"/>
+
+            <TextView
+                android:id="@+id/update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1小时前更新"
+                android:textColor="#cecece"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/main_common_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_rightarrow"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/tv_reddot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/main_common_next"
+            android:src="@drawable/icon_prompt"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#DDDDDD"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</FrameLayout>

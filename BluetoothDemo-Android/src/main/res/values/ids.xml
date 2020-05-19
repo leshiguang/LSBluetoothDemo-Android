@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+
+    <!-- Messages IDs -->
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="about_version_code" type="id"/>
+    <item name="split" type="id"/>
+    <item name="dialog_title" type="id"/>
+    <item name="dialog_content" type="id"/>
+    <item name="dialog_progress_bar" type="id"/>
+    <item name="dialog_btn_positive" type="id"/>
+    <item name="dialog_btn_negative" type="id"/>
+    <item name="dialog_content_view" type="id"/>
+    <item name="dialog_btn_more" type="id"/>
+
+    <!-- list -->
+    <item name="list_view" type="id"/>
+    <item name="list_img" type="id"/>
+    <item name="list_icon" type="id"/>
+    <item name="list_title" type="id"/>
+    <item name="list_content_main" type="id"/>
+    <item name="list_content_sub" type="id"/>
+    <item name="list_content_sub2" type="id"/>
+
+    <!-- device functions menu -->
+    <item name="fun_app_permission" type="id"></item>
+    <item name="fun_connect" type="id"></item>
+    <item name="fun_cancel_connect" type="id"></item>
+    <item name="fun_device_info" type="id"></item>
+    <item name="fun_clear" type="id"></item>
+    <item name="fun_upgrade" type="id"></item>
+    <item name="fun_read_battery" type="id"></item>
+    <item name="fun_alarm_clock" type="id"></item>
+    <item name="fun_event_reminder" type="id"></item>
+    <item name="fun_sedentry" type="id"></item>
+    <item name="fun_night_mode" type="id"></item>
+    <item name="fun_screen_mode" type="id"></item>
+    <item name="fun_wear_mode" type="id"></item>
+    <item name="fun_hr_detect_mode" type="id"></item>
+    <item name="fun_weather" type="id"></item>
+    <item name="fun_dictance_unit" type="id"></item>
+    <item name="fun_time_unit" type="id"></item>
+    <item name="fun_dialpace_mode" type="id"></item>
+    <item name="fun_auto_discern" type="id"></item>
+    <item name="fun_hr_warning" type="id"></item>
+    <item name="fun_behavior_reminder" type="id"></item>
+    <item name="fun_target" type="id"></item>
+    <item name="fun_custom_pages" type="id"></item>
+    <item name="fun_message_remind" type="id"></item>
+    <item name="fun_test_message_remind" type="id"></item>
+    <item name="fun_test_incoming_call" type="id"></item>
+    <item name="fun_user_info" type="id"></item>
+    <item name="fun_bind_device" type="id"></item>
+    <item name="fun_health_score" type="id"></item>
+    <item name="fun_photographing" type="id"></item>
+    <item name="fun_device_positioning" type="id"></item>
+    <item name="fun_device_restart" type="id"></item>
+    <item name="fun_device_switch" type="id"></item>
+    <item name="fun_sport_request" type="id"></item>
+    <item name="fun_mood_reminder" type="id"></item>
+    <item name="fun_scan_filter" type="id"></item>
+
+    <!-- Kchiing Reminder Setting ID -->
+
+    <item name="kchiing_fun_appointment_reminder" type="id"></item>
+    <item name="kchiing_fun_message_reminder" type="id"></item>
+    <item name="kchiing_fun_wakeup_reminder" type="id"></item>
+    <item name="kchiing_fun_simple_reminder" type="id"></item>
+
+    <!-- M5 functions -->
+    <item name="fun_quiet_mode" type="id"></item>
+    <item name="fun_add_app_message_reminder" type="id"></item>
+    <item name="fun_send_udp_packet" type="id"></item>
+    <item name="fun_listen_udp_packet" type="id"></item>
+
+    <!-- BPM functions -->
+    <item name="fun_bpm_get_measurement_data" type="id"></item>
+    <item name="fun_bpm_delete_measurement_data" type="id"></item>
+    <item name="fun_bpm_set_measurement_time_interval" type="id"></item>
+    <item name="fun_bpm_read_measurement_time_interval" type="id"></item>
+    
+    <!-- A2 Alarm Clock -->
+	<item name="fun_a2_alarm_clock" type="id"></item>
+</resources>

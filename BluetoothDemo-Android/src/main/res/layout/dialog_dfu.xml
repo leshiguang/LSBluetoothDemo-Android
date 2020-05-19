@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dialog_text_margin">
+
+        <TextView
+            android:id="@id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/text_black_main"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_vertical_margin"
+            android:textColor="@color/text_black_sub"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:gravity="right">
+
+        <TextView
+            android:id="@id/dialog_btn_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_raised_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/dialog_btn_positive"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="@dimen/button_raised_minWidth"
+            android:textAllCaps="true"
+            android:textColor="@color/text_black_main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@id/dialog_btn_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_raised_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="@dimen/button_raised_minWidth"
+            android:textAllCaps="true"
+            android:textColor="@color/primary"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

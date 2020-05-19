@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BluetoothDemo</string>
+    <string name="app_version">1.3.8-support-ota</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_device">Add Device</string>
+    <string name="title_activity_show_device">Show Device Info</string>
+    <string name="action_add_device">Add Device</string>
+    <string name="message_delete_prompt">Delete the device now?</string>
+    <string name="message_empty_unconnect">.................</string>
+    <string name="message_no_device">No Measuring Device!</string>
+    <string name="action_device_info">Device Info</string>
+    <string name="action_clear_text">Clear Text</string>
+    <string name="action_upgrade_device">Upgrade Device</string>
+    <string name="message_default_search">...........</string>
+    <string name="action_search">Search Device</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="update_success">Upgrade Success! %m min %ss</string>
+    <string name="update_fail">Upgrade Failure! %@</string>
+    <string name="preferenceScreen_title">Scan Filter</string>
+    <string name="listPreference_title">Broadcast Type</string>
+    <string name="listPreference_dialogTitle">Choose Broadcast Type</string>
+    <string name="multiSelectListPreference_title">Device Type</string>
+    <string name="multiSelectListPreference_dialogTitle">Choose Device Type</string>
+    <string name="enable_notification">Enable NotificationService</string>
+    <string name="enable_accessibility">Enable AccessibiityService</string>
+    <string name="enable_appmessage_filter">Set App Message Filter</string>
+    <string name="send_app_message">Test App Message</string>
+    <string name="set_user_info">Set User Info</string>
+    <string name="enable_behavior_remind">Enable Behavior Remind</string>
+    <string name="disable_behavior_remind">Disable Behavior Remind</string>
+    <string name="add_custom_protocol">Add Custom Service UUID</string>
+
+    <!-- LISTVIEW start -->
+    <string name="listview_no_data">No more data</string>
+    <string name="listview_load_more">Release to refresh data</string>
+    <string name="listview_pull_to_load">load to refresh data</string>
+    <string name="listview_loading">loading</string>
+    <string name="listview_loading2">loading...</string>
+    <!-- LISTVIEW end -->
+
+
+    <!-- XLISTVIEW start -->
+    <string name="xlistview_header_hint_normal">Draw to Refresh</string>
+    <string name="xlistview_header_hint_ready">Release to refresh data</string>
+    <string name="xlistview_header_hint_loading">Syncing...</string>
+    <string name="xlistview_header_last_time">Last update at：</string>
+    <string name="xlistview_footer_hint_normal">View more</string>
+    <string name="xlistview_footer_hint_ready">Release to mount more</string>
+    <string name="xlistview_footer_hint_no_more">No more</string>
+    <string name="xlistview_heade_synchronization_completed">Completed</string>
+    <!-- XLISTVIEW end -->
+
+    <string name="home_no_blood_sugar">没血糖数据</string>
+    <string name="blood_glucose_data_format">data format</string>
+    <string name="str_timeformat_year_month_day_hour_min_sec" formate="false">yyyy-MM-dd HH:mm:ss</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Scan Filter</item>
+        <item>Search Device</item>
+        <item>Measured Device</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_device_scan_filter</item>
+        <item>@drawable/ic_menu_ble_scan</item>
+        <item>@drawable/ic_menu_device_list</item>
+    </array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="device_function_items">
+        <item>固件升级</item>
+        <item>闹钟提醒</item>
+        <item>久坐提醒</item>
+        <item>事件提醒</item>
+        <item>夜间模式</item>
+        <item>屏幕显示</item>
+        <item>佩戴方式</item>
+        <item>心率检测</item>
+        <item>天气提醒</item>
+        <item>距离显示</item>
+        <item>时间显示</item>
+        <item>表盘样式</item>
+        <item>自动识别</item>
+        <item>心率预警</item>
+        <item>行为提醒</item>
+        <item>目标设置</item>
+        <item>读取电量</item>
+        <item>自定义页面</item>
+    </string-array>
+    <string-array name="old_device_function_items">
+        <item>固件升级</item>
+        <item>闹钟提醒</item>
+    </string-array>
+
+    <string name="state_unknown">State: unknown</string>
+    <string name="state_connected">State: Connected</string>
+    <string name="state_connecting">State: Connecting</string>
+    <string name="state_disconnect">State: Disconnected</string>
+    <string name="setting_ok">Setting Success</string>
+    <string name="setting_fail">Setting Failed</string>
+
+    <!--
+    <item name="fun_device_info" type="id"></item>
+    <item name="fun_clear" type="id"></item>
+    <item name="fun_upgrade" type="id"></item>
+    <item name="fun_read_battery" type="id"></item>
+    <item name="fun_alarm_clock" type="id"></item>
+    <item name="fun_event_reminder" type="id"></item>
+    <item name="fun_sedentry" type="id"></item>
+    <item name="fun_night_mode" type="id"></item>
+    <item name="fun_screen_mode" type="id"></item>
+    <item name="fun_wear_mode" type="id"></item>
+    <item name="fun_hr_detect_mode" type="id"></item>
+    <item name="fun_weather" type="id"></item>
+    <item name="fun_dictance_unit" type="id"></item>
+    <item name="fun_time_unit" type="id"></item>
+    <item name="fun_dialpace_mode" type="id"></item>
+    <item name="fun_auto_discern" type="id"></item>
+    <item name="fun_hr_warning" type="id"></item>
+    <item name="fun_behavior_reminder" type="id"></item>
+    <item name="fun_target" type="id"></item>
+    <item name="fun_custom_pages" type="id"></item>
+    -->
+    <string name="str_fun_app_permission">App Permission</string>
+    <string name="str_fun_connect">Connect</string>
+    <string name="str_fun_cancel_connect">Cancel Connect</string>
+    <string name="str_fun_device_info">Device Information</string>
+    <string name="str_fun_clear">Clear logs</string>
+    <string name="str_fun_upgrade">Upgrade Firmware</string>
+    <string name="str_fun_read_battery">Read Device Power</string>
+    <string name="str_fun_alarm_clock">Alarm Clock</string>
+    <string name="str_fun_event_reminder">Event Clock</string>
+    <string name="str_fun_night_mode">Night Mode</string>
+    <string name="str_fun_screen_mode">Screen Mode</string>
+    <string name="str_fun_wear_mode">Wearing Mode</string>
+    <string name="str_fun_hr_detect_mode">HR Detect Mode</string>
+    <string name="str_fun_weather">Weather Remind</string>
+    <string name="str_fun_dictance_unit">Distance Uint</string>
+    <string name="str_fun_time_unit">Time Format</string>
+    <string name="str_fun_dialpace_mode">Dialpeace Mode</string>
+    <string name="str_fun_auto_discern">Auto Discern</string>
+    <string name="str_fun_sedentry">Sedentary Remind</string>
+    <string name="str_fun_hr_warning">Heart Rate Warning</string>
+    <string name="str_fun_behavior_reminder">Behavior Remind</string>
+    <string name="str_fun_target">Encourage Target</string>
+    <string name="str_fun_custom_pages">Custom Pages</string>
+    <string name="str_fun_message_remind">Message Remind</string>
+    <string name="str_fun_test_message_remind">Test Message Remind</string>
+    <string name="str_fun_test_incoming_call">Test Incoming Call</string>
+    <string name="str_fun_user_info">User Info</string>
+    <string name="str_fun_binding">Binding Device</string>
+    <string name="str_fun_health_score">Health Score</string>
+    <string name="str_fun_photographing">Take Pictures</string>
+    <string name="str_fun_positioning">Device Positioning</string>
+    <string name="str_fun_restart">Device Restart</string>
+    <string name="str_fun_device_switch">Device Switch</string>
+    <string name="str_new_data">%@ New Data</string>
+    <string name="str_no_data">No Data</string>
+    <string name="str_battery_percentage">power:%@</string>
+    <string name="str_fun_sport_request">Sport Request</string>
+    <string name="str_fun_mood_reminder">Moodbeam Remind</string>
+    <string name="str_fun_scan_filter">Scan Filter</string>
+
+    <!-- Device Setting Dialog Title -->
+    <string name="title_app_permission">Set App Permission</string>
+    <string name="title_alarm_clock">Set Alarm Clock</string>
+    <string name="title_event_clock">Set Event Clock</string>
+    <string name="title_sedentary">Set Sedentary Remind</string>
+    <string name="title_night_mode">Set Night Mode</string>
+    <string name="title_screen_mode">Set Screen Mode</string>
+    <string name="title_wearing_mode">Set Wearing Mode</string>
+    <string name="title_hr_detect_mode">Set Heart Rate Detect Mode</string>
+    <string name="title_weather">Set Weather</string>
+    <string name="title_distance_unit">Set Distance Unit</string>
+    <string name="title_time_format">Set Time Format</string>
+    <string name="title_auto_discern">Set Auto Discern</string>
+    <string name="title_hr_warning">Set Heart Rate Warning</string>
+    <string name="title_behavior_remind">Set Behavior Remind</string>
+    <string name="title_target">Set Encourage Target</string>
+    <string name="title_custom_pages">Set Custom Pages</string>
+    <string name="title_dialpeace">Set Dialpeace Mode</string>
+    <string name="title_error_parameter">Invalid parameter</string>
+    <string name="title_message_remind">Set Message Remind</string>
+    <string name="title_test_message_remind">Test Message Remind</string>
+    <string name="title_test_incoming_call_remind">Test Incoming Call Remind</string>
+    <string name="title_set_user_info">Set User Info</string>
+    <string name="title_input_random_number">Input Random Number</string>
+    <string name="title_set_health_score">Set Health Score</string>
+    <string name="title_test_photographing">Send Photographing Command</string>
+    <string name="title_test_positioning">Send Positioning Command</string>
+    <string name="title_device_function">Set Device Function Status</string>
+    <string name="title_gps_status">Set Gps Status</string>
+    <string name="title_mood_reminder">Set Moodbeam Remid</string>
+    <string name="title_scan_filter">Set Scan Filter</string>
+
+    <!-- Dialog Label -->
+    <string name="label_start_time">Start Time</string>
+    <string name="label_end_time">End Time</string>
+    <string name="label_clock">Clock Title</string>
+    <string name="label_switch">Switch Status</string>
+    <string name="label_clock_time">Clock Time</string>
+    <string name="label_clock_index">Clock Index</string>
+    <string name="label_sedentary_time">Sedentary Time</string>
+    <string name="label_target_type">Target Type</string>
+    <string name="label_target_value">Target Value</string>
+    <string name="label_please_enter">please enter</string>
+    <string name="label_min_heart_rate">Min Heart Rate</string>
+    <string name="label_max_heart_rate">Max Heart Rate</string>
+    <string name="label_message_type">Message Type</string>
+    <string name="label_message_title">Message Title</string>
+    <string name="label_message_content">Message Content</string>
+    <string name="label_incoming_call">Incoming Call</string>
+    <string name="label_user_name">Name</string>
+    <string name="label_user_number">Number</string>
+    <string name="label_user_gender">Gender</string>
+    <string name="label_user_height">Height(unit:M)</string>
+    <string name="label_user_weight">Weight(unit:kg)</string>
+    <string name="label_user_age">Age</string>
+    <string name="label_athlete_level">Athlete Level</string>
+    <string name="label_random_number">Random Number</string>
+    <string name="label_health_score">Health Info</string>
+    <string name="label_photographing_state">Photographing State</string>
+    <string name="label_reminder_interval">Reminder Interval(minute)</string>
+    <string name="label_reminder_type">Reminder Type</string>
+    <string name="label_function_type">Device Function</string>
+    <string name="label_gps_status">GPS Status</string>
+    <string name="label_vibration_interval">Vibration Interval(m)</string>
+    <string name="label_vibration_time">Vibration Time(s)</string>
+    <string name="label_filter_device_name">Device Name</string>
+    <string name="label_filter_device_type">Device Type</string>
+    <string name="label_filter_device_rssi">Device Rssi</string>
+
+    <!-- Dialog Or Message status -->
+    <string name="str_device_not_connected">Device is not connected!</string>
+    <string name="str_random_number_error">Verification failed, please re-enter.</string>
+    <string name="str_random_number_ok">Verification success.</string>
+    <string name="str_pair_status_ok">Binding success.</string>
+    <string name="str_pair_status_failed">Binding failed.</string>
+    <string name="str_pair_status_timeout">Binding timeout.</string>
+    <string name="str_verification_failed">Verification failed.</string>
+    <string name="str_bluetooth_unavailiable">Bluetooth unavailiable.</string>
+
+    <!-- Kchiing Reminder Setting -->
+    <string name="str_fun_reminder_appointment">Appointment Reminder</string>
+    <string name="str_fun_reminder_message">Message Reminder</string>
+    <string name="str_fun_reminder_wakeup">Wakeup Reminder</string>
+    <string name="str_fun_reminder_simple">Simple Reminder</string>
+    <string name="title_reminder_appointment">Add Appointment Reminder</string>
+    <string name="title_reminder_message">Add Message Reminder</string>
+    <string name="title_reminder_wakeup">Add Wakeup Reminder</string>
+    <string name="title_reminder_simple">Add Simple Reminder</string>
+    <string name="label_reminder_title">Reminder Title</string>
+    <string name="label_reminder_description">Description</string>
+    <string name="label_appointment_time">Appointment Time</string>
+    <string name="label_reminder_time">Reminder Time</string>
+    <string name="label_location">Location</string>
+    <string name="label_repeat_mode">Repeat Mode</string>
+    <string name="label_vibration_length">Vibration Length</string>
+    <string name="label_reminder_icon">Select Icon</string>
+    <string name="label_reminder_ends_time">Expiration Date</string>
+    <string name="label_join_agenda">Join Agenda</string>
+    <string name="label_snooze_length">Snooze Length</string>
+    <string name="title_fun_quiet_mode">Set Quiet Mode</string>
+    <string name="str_fun_quiet_mode">Quiet Mode</string>
+    <string name="label_fun_list">Device Functions</string>
+
+    <!-- BPM -->
+    <string name="str_fun_get_bpm_data">Get Data</string>
+    <string name="str_fun_delete_bpm_data">Delete Data</string>
+    <string name="title_get_bpm_data">Get Latest Measurement Data</string>
+    <string name="title_delete_bpm_data">Delete Measurement Data</string>
+    <string name="title_set_measurement_time_interval">Set Measurement Time Interval</string>
+    
+    <string name="label_data_type">Data Type</string>
+    <string name="label_data_index">Data Index</string>
+    <string name="str_fun_set_bmp_time_interval">Set MeasurementTime Interval</string>
+    <string name="label_nap_duration">Nap Duration</string>
+    <string name="label_nap_start_time">Nap Start Time</string>
+    <string name="label_night_duration">Night Duration</string>
+    <string name="label_night_start_time">Night Start Time</string>
+    <string name="label_night_interval_min">Night Interval Minute</string>
+    <string name="label_day_interval_min">Day Interval Minute</string>
+    <string name="label_display_state">Display State</string>
+    <string name="label_auto_send_data">Auto Send Data</string>
+    <string name="str_fun_read_bmp_time_interval">Read MeasurementTime Interval</string>
+    
+   	<string name="label_time_period_start">BetweenHours-Start</string>
+   	<string name="label_time_period_end">BetweenHours-End</string>
+   	
+</resources>

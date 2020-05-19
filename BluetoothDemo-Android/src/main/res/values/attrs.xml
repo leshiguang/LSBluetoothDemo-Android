@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+    
+    
+     <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean" />
+        <attr name="rcProgress" format="float" />
+        <attr name="rcMax" format="float" />
+        <attr name="rcSecondaryProgress" format="float" />
+        <attr name="rcBackgroundPadding" format="dimension" />
+        <attr name="rcRadius" format="dimension" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+        <attr name="rcBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IconRoundCornerProgress">
+        <attr name="rcIconSrc" format="integer" />
+        <attr name="rcIconSize" format="dimension" />
+        <attr name="rcIconWidth" format="dimension" />
+        <attr name="rcIconHeight" format="dimension" />
+        <attr name="rcIconPadding" format="dimension" />
+        <attr name="rcIconPaddingLeft" format="dimension" />
+        <attr name="rcIconPaddingRight" format="dimension" />
+        <attr name="rcIconPaddingTop" format="dimension" />
+        <attr name="rcIconPaddingBottom" format="dimension" />
+        <attr name="rcIconBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextRoundCornerProgress">
+        <attr name="rcTextProgressColor" format="color" />
+        <attr name="rcTextProgressSize" format="dimension" />
+        <attr name="rcTextProgressMargin" format="dimension" />
+        <attr name="rcTextProgress" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="MainProgressCircleView">
+        <attr name="in_circle_color" format="color" />
+        <attr name="out_circle_color" format="color" />
+        <attr name="circle_diameter" format="dimension" />
+        <attr name="big_text" format="dimension" />
+        <attr name="middle_text" format="dimension" />
+        <attr name="small_text" format="dimension" />
+        <attr name="text_padding" format="dimension" />
+        <attr name="main_title_height" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="WaveView">
+        <attr name="above_wave_color" format="color" />
+        <attr name="blow_wave_color" format="color" />
+        <attr name="third_wave_color" format="color" />
+        <attr name="progress" format="integer" />
+        <attr name="wave_length" format="enum">
+            <enum name="large" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="little" value="3" />
+        </attr>
+        <attr name="wave_height" format="enum">
+            <enum name="large" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="little" value="3" />
+        </attr>
+        <attr name="wave_hz" format="enum">
+            <enum name="fast" value="1" />
+            <enum name="normal" value="2" />
+            <enum name="slow" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="waveThemes">
+        <attr name="waveViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MultipleLinearLayout">
+        <attr name="margin_Left" format="dimension|reference" />
+        <attr name="margin_Right" format="dimension|reference"/>
+        <attr name="margin_Top" format="dimension|reference"/>
+        <attr name="margin_Botton" format="dimension|reference"/>
+        <attr name="type" format="integer"/>
+    </declare-styleable>
+
+    <string-array name="language_list">
+        <item name="language_de">de</item>
+        <item name="language_en">en</item>
+        <item name="language_ja">ja</item>
+    </string-array>
+
+    <declare-styleable name="CustomView">
+        <attr name="out_circle_radius" format="dimension"/>
+        <attr name="inner_circle_radius" format="dimension"/>
+        <attr name="out_line_height" format="dimension"/>
+        <attr name="inner_line_height" format="dimension"/>
+        <attr name="outer_circle_color" format="color"/>
+        <attr name="inner_circle_color" format="color"/>
+        <attr name="out_line_color" format="color"/>
+        <attr name="inner_line_color" format="color"/>
+        <attr name="item_count" format="integer"/>
+    </declare-styleable>
+    
+    
+</resources>

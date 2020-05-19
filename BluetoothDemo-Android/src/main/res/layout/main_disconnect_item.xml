@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    
+    <!--        android:background="@mipmap/main_disconnect"
+     -->
+   <ImageView
+       android:id="@+id/main_disconnect_iv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/main_data_padding"
+       android:layout_marginBottom="@dimen/main_small_data_padding"
+       android:scaleType="fitXY"
+       android:layout_centerHorizontal="true"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_data_padding"
+        android:textSize="@dimen/main_small_text"
+        android:textColor="@color/main_big_data_text"
+        android:layout_below="@id/main_disconnect_iv"
+        android:gravity="center"
+        android:text="设备未连接"/>
+</RelativeLayout>

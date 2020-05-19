@@ -1,0 +1,157 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--default-->
+ <!--    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen> -->
+    <dimen name="view_horizontal_margin">8dp</dimen>
+    <dimen name="view_vertical_margin">8dp</dimen>
+    <dimen name="text_horizontal_margin">4dp</dimen>
+    <dimen name="text_vertical_margin">4dp</dimen>
+
+    <!--statusBar & toolBar-->
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="tabs_height">48dp</dimen>
+    <dimen name="navigation_height">48dp</dimen>
+    <dimen name="tool_status_height">80dp</dimen>
+    <dimen name="icon">24dp</dimen>
+    <dimen name="icon_inner">22dp</dimen>
+
+    <!--widget-->
+    <dimen name="progress_bar_min_height">2dp</dimen>
+
+    <!--list-->
+    <dimen name="list_single_line">48dp</dimen>
+    <dimen name="list_single_line_with_icon">48dp</dimen>
+    <dimen name="list_single_line_with_img">56dp</dimen>
+    <dimen name="list_single_line_img">40dp</dimen>
+    <dimen name="list_single_line_icon">24dp</dimen>
+    <dimen name="list_single_line_text_only">36dp</dimen>
+    <dimen name="list_double_line">72dp</dimen>
+    <dimen name="list_text_margin_left">72dp</dimen>
+    <dimen name="list_drawable_padding">32dp</dimen>
+
+    <!--button-->
+    <dimen name="button_raised_height">36dp</dimen>
+    <dimen name="button_raised_minWidth">88dp</dimen>
+    <dimen name="button_radio_width">56dp</dimen>
+    <dimen name="button_flat_half">28dp</dimen>
+    <dimen name="button_flat">56dp</dimen>
+    <dimen name="button_radius">2dp</dimen>
+    <dimen name="button_fab_margin">0dp</dimen>
+
+    <!--view-->
+    <dimen name="cards_radius">2dp</dimen>
+    <dimen name="navigation_heard">72dp</dimen>
+    <dimen name="navigation_width">300dp</dimen>
+    <dimen name="navigation_width_land">240dp</dimen>
+
+    <!--divide-->
+    <dimen name="divider_space_double">16dp</dimen>
+    <dimen name="divider_space_single">8dp</dimen>
+    <dimen name="divider_line_height">1dp</dimen>
+
+    <!--dialog-->
+    <dimen name="dialog_text_margin">24dp</dimen>
+
+    <!--shadow-->
+    <dimen name="elevation_one">1.5dp</dimen>
+    <dimen name="elevation_two">3dp</dimen>
+    <dimen name="elevation_three">6dp</dimen>
+    <dimen name="elevation_four">9dp</dimen>
+    <dimen name="elevation_five">12dp</dimen>
+
+    <!-- text size -->
+    <dimen name="display4">112sp</dimen>
+    <dimen name="display3">56sp</dimen>
+    <dimen name="display1">34sp</dimen>
+    <dimen name="headline">24sp</dimen>
+    <dimen name="title">20sp</dimen>
+    <dimen name="subhead">16sp</dimen>
+    <dimen name="body2">14sp</dimen>
+    <dimen name="body1">14sp</dimen>
+    <dimen name="caption">12sp</dimen>
+    <dimen name="menu">14sp</dimen>
+    <dimen name="button">14sp</dimen>
+
+    <!--app-->
+    <!--add your dimen default here-->
+    <dimen name="dfu_margin_top">148dp</dimen>
+    
+    
+     <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="history_bt_margin">10dp</dimen>
+    <dimen name="history_bt_width">36dp</dimen>
+    <dimen name="history_bt_height">20dp</dimen>
+    <dimen name="shape_btn_chart_time_padding">7dp</dimen>
+    <dimen name="default_text_size">20dp</dimen>
+    <dimen name="text_size_xxl">30sp</dimen>
+    <dimen name="text_size_sup">24sp</dimen>
+    <dimen name="text_size_lar">22sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+    <dimen name="text_size_mid">18sp</dimen>
+    <dimen name="text_size_sml">16sp</dimen>
+    <dimen name="text_size_xs">16sp</dimen>
+    <dimen name="text_size_xxs">12sp</dimen>
+
+
+    <!-- 文字的字号   text_size_title (标题 ,导航,名称分类)
+                    text__size_small_title(小标题)
+                    text_size_content (内容)
+                    text_size_desc (说明性文字)
+                    text_size_small_desc (次要的备注信息)
+     -->
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_small_title">16sp</dimen>
+    <dimen name="text_size_content">16sp</dimen>
+    <dimen name="text_size_desc">12sp</dimen>
+    <dimen name="text_size_small_desc">11sp</dimen>
+
+
+    <!--睡眠-->
+    <dimen name="sleep_margin_left">20dp</dimen>
+    <dimen name="sleep_hieght">40dp</dimen>
+    <dimen name="sleep_chat_height">250dp</dimen>
+    <dimen name="text_size_12sp">11sp</dimen>
+    <dimen name="text_size_40sp">40sp</dimen>
+
+    <!--首页-->
+    <dimen name="main_title_hight">50dp</dimen>
+    <dimen name="main_title_size">18sp</dimen>
+    <dimen name="main_big_text">50sp</dimen>
+    <dimen name="main_small_text">16sp</dimen>
+    <dimen name="main_middle_text">24sp</dimen>
+    <dimen name="main_unit_text">13sp</dimen>
+    <dimen name="main_smallest_text">12sp</dimen>
+    <dimen name="main_data_padding">20dp</dimen>
+    <dimen name="main_small_data_padding">2dp</dimen>
+    <dimen name="main_small_data_unit_padding">3dp</dimen>
+    <dimen name="main_small_data_right_margin">11dp</dimen>
+    <dimen name="main_item_height">70dp</dimen>
+    <dimen name="device_padding_left_right">15dp</dimen>
+    <dimen name="device_padding_top_bottom">15dp</dimen>
+    <dimen name="device_small_padding_top_bottom">20dp</dimen>
+    <dimen name="device_smallest_text">14sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="device_next_margin_left">10dp</dimen>
+    <dimen name="device_alert_padding">14dp</dimen>
+    <dimen name="main_tab">10sp</dimen>
+    <dimen name="device_repeat_margin">6dp</dimen>
+    <dimen name="main_drawable_padding">-3dp</dimen>
+
+    <dimen name="icon_padding_top">7dp</dimen>
+    <dimen name="icon_padding_bottom">4dp</dimen>
+
+    <dimen name="common_row_height">50dp</dimen>
+
+
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="divider_width">1px</dimen>
+
+    <dimen name="font_12">12sp</dimen>
+    
+
+</resources>
+

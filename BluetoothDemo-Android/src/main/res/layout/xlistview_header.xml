@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom" >
+
+    <LinearLayout
+        android:id="@+id/xlistview_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/xlistview_header_indicator"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="5dp">
+
+            <com.bluetooth.demo.view.AVLoadingIndicatorView
+                android:id="@+id/xlistview_header_progressbar"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/xlistview_header_arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/main_pulldown"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/xlistview_header_text">
+
+            <TextView
+                android:id="@+id/xlistview_header_hint_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading"
+                android:textSize="12sp"
+                android:textColor="@color/main_small_data_text"
+                android:paddingRight="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

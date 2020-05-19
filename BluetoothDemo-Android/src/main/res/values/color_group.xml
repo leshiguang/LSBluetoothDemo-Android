@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!--群组-->
+        <color name="groupmain_head">#19ccf9</color>
+        <color name="groupbackground">#f0f0f0</color>
+        <color name="group_line">#e9e9e9</color>
+        <color name="group_txt_color_black">#414141</color>
+        <color name="group_txt_color_gray">#b6b6b6</color>
+        <color name="group_color_red">#f35454</color>
+        <color name="group_bisai_blue">#00afe4</color>
+        <color name="selete_group_bg">#178fb3</color>
+        <color name="group_like_text">#ff6363</color>
+        <color name="match_intro_blue">#109abd</color>
+
+        <color name="group_cancle_txt_color">#414141</color>
+        <color name="group_search_background">#ebebeb</color>
+        <color name="group_dialog_title_color">#222222</color>
+        <color name="group_comment_txtcolor">#8ED5F0</color>
+        <color name="group_headbackground">#071b52</color>
+
+</resources>

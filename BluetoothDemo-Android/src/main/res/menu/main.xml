@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bluetooth.demo.MainActivity" >
+
+      <item 
+         android:id="@+id/action_add_device_item"
+        android:title="@string/action_add_device"
+        android:icon="@android:drawable/ic_menu_add"
+         android:orderInCategory="100"
+        android:showAsAction="ifRoom" />
+      
+
+</menu>

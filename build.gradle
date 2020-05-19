@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        mavenLocal()
+        maven {
+            url "https://maven.pkg.github.com/leshiguang/maven-repository"
+            credentials {
+                username GITHUB_USERNAMNE
+                password GITHUB_PASSWORD
+            }
+        }
+        google()
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath "com.lifesense.android:lifesense-android-service-plugin:0.1.0"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        maven {
+            url "https://maven.pkg.github.com/leshiguang/maven-repository"
+            credentials {
+                username GITHUB_USERNAMNE
+                password GITHUB_PASSWORD
+            }
+        }
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
