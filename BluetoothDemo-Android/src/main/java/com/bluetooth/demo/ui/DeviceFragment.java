@@ -45,6 +45,8 @@ import com.bluetooth.demo.ui.dialog.SelectFileDialog;
 import com.bluetooth.demo.ui.dialog.SettingDialogFragment;
 import com.bluetooth.demo.utils.DeviceDataUtils;
 import com.bluetooth.demo.utils.FileUtils;
+import com.lifesense.android.api.callback.AuthorizationCallback;
+import com.lifesense.android.api.enums.AuthorizationResult;
 import com.lifesense.ble.LsBleManager;
 import com.lifesense.ble.OnDeviceReadListener;
 import com.lifesense.ble.OnDeviceUpgradeListener;
@@ -587,7 +589,12 @@ public class DeviceFragment extends Fragment{
 		//clear measure device list
 		LsBleManager.getInstance().setMeasureDevice(null);
 		//add target measurement device
-		LsBleManager.getInstance().addMeasureDevice(currentDevice);
+		LsBleManager.getInstance().addMeasureDevice(currentDevice, new AuthorizationCallback() {
+			@Override
+			public void callback(AuthorizationResult authorizationResult) {
+				System.out.println(authorizationResult);
+			}
+		});
 		//set product user info on data syncing mode
 		DeviceSettiingProfiles.setProductUserInfoOnSyncingMode(currentDevice);
 		//start data syncing service

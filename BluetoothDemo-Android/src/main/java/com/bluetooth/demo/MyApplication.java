@@ -14,6 +14,7 @@ import com.lifesense.ble.LsBleManager;
 import com.lifesense.ble.bean.DefaultCallConfig;
 import com.lifesense.ble.bean.WeightAppendData;
 import com.lifesense.ble.bean.constant.SexType;
+import com.lifesense.foundation.ApplicationHolder;
 
 /**
  * @author sky
@@ -23,11 +24,13 @@ public class MyApplication  extends Application {
 
 	@TargetApi(23)
 	@Override
-	public void onCreate() 
+	public void onCreate()
 	{
 		super.onCreate();
 		//init LSBluetoothManager
-		LsBleManager.getInstance().initialize(getApplicationContext(), "your applicationId");
+		LsBleManager.getInstance().initialize(getApplicationContext(), "com.leshiguang.saas.rbac.demo.appid");
+		ApplicationHolder.setmApplication(this);
+
 		//register bluetooth broadacst receiver
 		LsBleManager.getInstance().registerBluetoothBroadcastReceiver(getApplicationContext());
 
