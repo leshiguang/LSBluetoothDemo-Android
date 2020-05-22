@@ -6,7 +6,6 @@
  * User Manual available at https://docs.gradle.org/5.6.3/userguide/tutorial_java_projects.html
  */
 apply plugin: 'com.android.application'
-apply plugin: 'lifesense-android-service'
 
 android {
     compileSdkVersion 26
@@ -52,7 +51,7 @@ dependencies {
 
     // This dependency is used by the application.
 //    implementation 'com.google.guava:guava:28.0-jre'
-    implementation 'com.lifesense.bluetooth:lifesense-ble-module:1.7.3'
+    implementation 'com.lifesense.bluetooth:lifesense-ble-module:1.7.5'
     // Use JUnit test framework
 //    classpath "com.lifesense.android:lifesense-android-service-plugin:0.1.0"
     testImplementation 'junit:junit:4.12'

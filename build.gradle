@@ -18,7 +18,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.1'
-        classpath "com.lifesense.android:lifesense-android-service-plugin:0.1.0"
     }
 }
 
