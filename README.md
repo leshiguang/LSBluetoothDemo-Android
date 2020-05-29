@@ -11,9 +11,9 @@ maven {  
 }
 ```
 
--USERNAME: Replace USERNAME with your GitHub username
+- USERNAME: Replace USERNAME with your GitHub username
 
--TOKEN: Replace TOKEN with your personal access token https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
+- TOKEN: Replace TOKEN with your personal access token https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
 
 
 
