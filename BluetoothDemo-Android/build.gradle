@@ -22,6 +22,9 @@ android {
             abiFilters "armeabi"
         }
     }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -52,6 +55,7 @@ dependencies {
     // This dependency is used by the application.
 //    implementation 'com.google.guava:guava:28.0-jre'
     implementation 'com.lifesense.bluetooth:lifesense-ble-module:1.7.7'
+    implementation 'com.google.code.gson:gson:2.8.5'
     // Use JUnit test framework
 //    classpath "com.lifesense.android:lifesense-android-service-plugin:0.1.0"
     testImplementation 'junit:junit:4.12'

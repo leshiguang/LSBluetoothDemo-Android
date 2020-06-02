@@ -14,7 +14,7 @@ import com.lifesense.ble.LsBleManager;
 import com.lifesense.ble.bean.DefaultCallConfig;
 import com.lifesense.ble.bean.WeightAppendData;
 import com.lifesense.ble.bean.constant.SexType;
-import com.lifesense.foundation.ApplicationHolder;
+import com.lifesense.weidong.lzsimplenetlibs.common.ApplicationHolder;
 
 /**
  * @author sky
