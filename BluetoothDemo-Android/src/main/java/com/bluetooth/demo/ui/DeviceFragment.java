@@ -587,6 +587,8 @@ public class DeviceFragment extends Fragment{
 		LsBleManager.getInstance().stopDataReceiveService();
 		//clear measure device list
 		LsBleManager.getInstance().setMeasureDevice(null);
+		//set delay disconnect
+		currentDevice.setDelayDisconnect(true);
 		//add target measurement device
 		LsBleManager.getInstance().addMeasureDevice(currentDevice, new AuthorizationCallback() {
 			@Override
