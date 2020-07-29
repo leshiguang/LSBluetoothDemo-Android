@@ -1,8 +1,5 @@
 package com.bluetooth.demo.ui;
 
-import java.io.File;
-import java.util.List;
-
 import android.app.Dialog;
 import android.app.Fragment;
 import android.app.ProgressDialog;
@@ -40,7 +37,6 @@ import com.bluetooth.demo.device.kchiing.BPMSettingProfiles;
 import com.bluetooth.demo.device.kchiing.KchiingSettingProfiles;
 import com.bluetooth.demo.ui.dialog.DialogUtils;
 import com.bluetooth.demo.ui.dialog.IDialogActionListener;
-import com.bluetooth.demo.ui.dialog.OnDialogClickListener;
 import com.bluetooth.demo.ui.dialog.SelectFileDialog;
 import com.bluetooth.demo.ui.dialog.SettingDialogFragment;
 import com.bluetooth.demo.utils.DeviceDataUtils;
@@ -71,6 +67,9 @@ import com.lifesense.ble.bean.constant.PacketProfile;
 import com.lifesense.ble.bean.constant.ProtocolType;
 import com.lifesense.ble.bean.kchiing.KAppointmentReminder;
 import com.lifesense.ble.bean.kchiing.KSimpleReminder;
+
+import java.io.File;
+import java.util.List;
 
 public class DeviceFragment extends Fragment{
 
@@ -588,18 +587,27 @@ public class DeviceFragment extends Fragment{
 		LsBleManager.getInstance().stopDataReceiveService();
 		//clear measure device list
 		LsBleManager.getInstance().setMeasureDevice(null);
+		//set delay disconnect
+		currentDevice.setDelayDisconnect(true);
 		//add target measurement device
 		LsBleManager.getInstance().addMeasureDevice(currentDevice, new AuthorizationCallback() {
 			@Override
 			public void callback(AuthorizationResult authorizationResult) {
-				System.out.println(authorizationResult);
+				if(authorizationResult!=null && authorizationResult.getCode() == AuthorizationResult.SUCCESS.getCode()){
+					Log.e("LS-BLE","resp of auth >>"+authorizationResult.toString());
+					//set product user info on data syncing mode
+					DeviceSettiingProfiles.setProductUserInfoOnSyncingMode(currentDevice);
+					//start data syncing service
+					LsBleManager.getInstance().startDataReceiveService(mDataCallback);
+				}
+				else{
+					Log.e("LS-BLE","resp of auth >>"+authorizationResult.toString());
+					//认证失败
+					DialogUtils.showPromptDialog(getActivity(),"Prompt", "Device Authentication Failure!"+currentDevice.getDeviceName()+"["+currentDevice.getMacAddress()+"]");
+					updateDeviceConnectState(DeviceConnectState.UNKNOWN);
+				}
 			}
 		});
-		//set product user info on data syncing mode
-		DeviceSettiingProfiles.setProductUserInfoOnSyncingMode(currentDevice);
-		//start data syncing service
-		LsBleManager.getInstance().startDataReceiveService(mDataCallback);
-	
 		//update connect state
 		updateDeviceConnectState(DeviceConnectState.CONNECTING);
 	}
