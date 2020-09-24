@@ -2,7 +2,7 @@
 
 buildscript {
     repositories {
-//        mavenLocal()
+        mavenLocal()
         maven {
             url "https://maven.pkg.github.com/leshiguang/maven-repository"
             credentials {
@@ -23,7 +23,7 @@ buildscript {
 
 allprojects {
     repositories {
-//        mavenLocal()
+        mavenLocal()
         maven {
             url "https://maven.pkg.github.com/leshiguang/maven-repository"
             credentials {

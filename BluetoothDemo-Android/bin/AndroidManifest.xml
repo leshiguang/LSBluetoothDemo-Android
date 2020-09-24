@@ -48,14 +48,14 @@
         </activity>
         
          <!-- 微信的系统通知的信息 -->
-      <!--   <service
+        <service
             android:name="com.lifesense.ble.message.NotificationService"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
             <intent-filter>
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
-        
+
          <service
             android:name="com.lifesense.ble.message.NotificationAccessService"
             android:enabled="true"
@@ -64,7 +64,7 @@
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
-        </service> -->
+        </service>
     </application>
 
 </manifest>
