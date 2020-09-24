@@ -29,6 +29,8 @@ dependencies {  
 
 init LSBleManager instance with Application Context
 ```java
+	ApplicationHolder.setmApplication(this);
+
 	LsBleManager.getInstance().initialize(getApplicationContext(), "com.leshiguang.saas.rbac.demo.appid");
     ApplicationHolder.setmApplication(this);
 
