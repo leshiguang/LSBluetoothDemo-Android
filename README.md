@@ -21,7 +21,7 @@ maven {  
 ```groovy
 
 dependencies {  
-    api 'com.lifesense.bluetooth:lifesense-ble-module:1.7.8'  
+    api 'com.lifesense.bluetooth:lifesense-ble-module:1.7.9'  
 }  
 ```
 
@@ -29,10 +29,8 @@ dependencies {  
 
 init LSBleManager instance with Application Context
 ```java
-	ApplicationHolder.setmApplication(this);
 
 	LsBleManager.getInstance().initialize(getApplicationContext(), "com.leshiguang.saas.rbac.demo.appid");
-    ApplicationHolder.setmApplication(this);
 
 ```
 
