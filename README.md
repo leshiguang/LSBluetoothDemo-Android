@@ -40,4 +40,3 @@ init LSBleManager instance with Application Context
 
 [android sdk api](Android-docs.zip  "android开发文档")
 
-[ios sdk api](iOS-SDK.zip  "ios开发文档")
