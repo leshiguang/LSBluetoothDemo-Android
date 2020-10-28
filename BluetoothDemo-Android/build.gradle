@@ -50,11 +50,11 @@ android {
 
 
 dependencies {
-    api fileTree(include: '*.jar', dir: 'libs')
+    api fileTree(include: ['*.jar','*.aar'], dir: 'libs')
 
     // This dependency is used by the application.
 //    implementation 'com.google.guava:guava:28.0-jre'
-    implementation 'com.lifesense.bluetooth:lifesense-ble-module:1.7.9'
+    //implementation 'com.lifesense.bluetooth:lifesense-ble-module:1.7.9'
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation "com.android.support:appcompat-v7:27.1.1"
     implementation "com.android.support:support-v4:27.1.1"

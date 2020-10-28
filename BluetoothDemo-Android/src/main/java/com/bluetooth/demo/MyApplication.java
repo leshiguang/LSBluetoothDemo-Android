@@ -36,7 +36,7 @@ public class MyApplication  extends Application {
 		//for debug mode
 		LsBleManager.getInstance().enableWriteDebugMessageToFiles(true, LsBleInterface.PERMISSION_WRITE_LOG_FILE);
 		//设置日志路径
-		String logPath=FileUtils.createPortraitUrl(getApplicationContext(), "reminder-app/log");
+		String logPath=FileUtils.createPortraitUrl(getApplicationContext(), "lifesense/log");
 		LsBleManager.getInstance().setBlelogFilePath(logPath, "test","1.0");
 
 		//register message service if need
@@ -44,7 +44,7 @@ public class MyApplication  extends Application {
 		
 		//set defulat call message
 		LsBleManager.getInstance().setCustomConfig(new DefaultCallConfig("unknown"));
-		
+
 		//for test
 		calculateBodyCompositionData(550);
 		

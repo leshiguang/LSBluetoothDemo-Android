@@ -270,10 +270,10 @@ public class DeviceFragment extends Fragment{
 		}
 
 		@Override
-		public void onReceivePedometerMeasureData(Object dataObject,
-				PacketProfile packetType, String sourceData) 
+		public void onReceivePedometerMeasureData(Object obj,
+				PacketProfile type, String srcData)
 		{
-			int devicePower=DeviceDataUtils.getDevicePowerPercent(dataObject, packetType);
+			int devicePower=DeviceDataUtils.getDevicePowerPercent(obj, type);
 			updateDevicePower(devicePower);
 			//update new data message
 			updateNewDatMessage();
@@ -281,8 +281,8 @@ public class DeviceFragment extends Fragment{
 			 * Pedoemter Measurement Data
 			 * Product：BonbonC、Mambo、MamboCall、MamboHR、Mambo Watch、MT/Gold、ZIVA
 			 */
-			showDeviceMeasuringData(dataObject);
-			LsBleManager.getInstance().setLogMessage("object data >> "+dataObject.toString());
+			showDeviceMeasuringData(obj);
+			LsBleManager.getInstance().setLogMessage("object data >> "+obj.toString());
 		}
 
 		@Override

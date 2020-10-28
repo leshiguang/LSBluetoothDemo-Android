@@ -1,10 +1,5 @@
 package com.bluetooth.demo.device;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.List;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -45,7 +40,6 @@ import com.lifesense.ble.OnDeviceReadListener;
 import com.lifesense.ble.OnSettingListener;
 import com.lifesense.ble.PairCallback;
 import com.lifesense.ble.bean.AppMessage;
-import com.lifesense.ble.bean.BehaviorRemindInfo;
 import com.lifesense.ble.bean.DeviceFunctionInfo;
 import com.lifesense.ble.bean.DeviceRestartInfo;
 import com.lifesense.ble.bean.HealthScoreInfo;
@@ -100,6 +94,11 @@ import com.lifesense.ble.bean.constant.UnitType;
 import com.lifesense.ble.bean.constant.VibrationMode;
 import com.lifesense.ble.bean.constant.WeekDay;
 import com.lifesense.ble.message.NotificationAccessService;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.List;
 
 @SuppressLint({ "DefaultLocale", "NewApi" }) 
 public class DeviceSettiingProfiles  {
