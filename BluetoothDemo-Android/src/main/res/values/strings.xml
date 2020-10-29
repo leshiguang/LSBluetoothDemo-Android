@@ -291,5 +291,11 @@
     
    	<string name="label_time_period_start">BetweenHours-Start</string>
    	<string name="label_time_period_end">BetweenHours-End</string>
-   	
+
+    <string name="scan_wifi">scan Wi-Fi</string>
+    <string name="reset_wifi">reset Wi-Fi</string>
+    <string name="start_wifi">start config</string>
+    <string name="cancel">Cancel</string>
+    <string name="wifi_password_error_toast_1">Wi-Fi password length is less than 8 digits</string>
+
 </resources>

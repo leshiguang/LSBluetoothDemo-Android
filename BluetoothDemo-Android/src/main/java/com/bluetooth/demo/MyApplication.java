@@ -27,7 +27,7 @@ public class MyApplication  extends Application {
 	{
 		super.onCreate();
 		//init LSBluetoothManager
-		LsBleManager.getInstance().initialize(getApplicationContext(), "com.leshiguang.saas.rbac.demo.appid");
+		LsBleManager.getInstance().initialize(getApplicationContext(), "88d01e7cb606c28eb35f9667df309aeb57ccf54b");
 
 		//register bluetooth broadacst receiver
 		LsBleManager.getInstance().registerBluetoothBroadcastReceiver(getApplicationContext());

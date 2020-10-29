@@ -25,6 +25,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -35,8 +36,10 @@ import com.bluetooth.demo.database.AsyncTaskRunner;
 import com.bluetooth.demo.device.DeviceSettiingProfiles;
 import com.bluetooth.demo.device.kchiing.BPMSettingProfiles;
 import com.bluetooth.demo.device.kchiing.KchiingSettingProfiles;
+import com.bluetooth.demo.ui.adapter.ScanWifiResultsAdapter;
 import com.bluetooth.demo.ui.dialog.DialogUtils;
 import com.bluetooth.demo.ui.dialog.IDialogActionListener;
+import com.bluetooth.demo.ui.dialog.InputPasswordDialog;
 import com.bluetooth.demo.ui.dialog.SelectFileDialog;
 import com.bluetooth.demo.ui.dialog.SettingDialogFragment;
 import com.bluetooth.demo.utils.DeviceDataUtils;
@@ -47,6 +50,7 @@ import com.lifesense.ble.LsBleManager;
 import com.lifesense.ble.OnDeviceReadListener;
 import com.lifesense.ble.OnDeviceUpgradeListener;
 import com.lifesense.ble.OnSettingListener;
+import com.lifesense.ble.PairCallback;
 import com.lifesense.ble.ReceiveDataCallback;
 import com.lifesense.ble.bean.BloodGlucoseData;
 import com.lifesense.ble.bean.BloodPressureData;
@@ -57,6 +61,7 @@ import com.lifesense.ble.bean.SportNotify;
 import com.lifesense.ble.bean.WeightData_A2;
 import com.lifesense.ble.bean.WeightData_A3;
 import com.lifesense.ble.bean.WeightUserInfo;
+import com.lifesense.ble.bean.WifiInfo;
 import com.lifesense.ble.bean.bmp.BMPCommand;
 import com.lifesense.ble.bean.bmp.BMPCommandPacket;
 import com.lifesense.ble.bean.constant.DeviceConnectState;
@@ -67,8 +72,10 @@ import com.lifesense.ble.bean.constant.PacketProfile;
 import com.lifesense.ble.bean.constant.ProtocolType;
 import com.lifesense.ble.bean.kchiing.KAppointmentReminder;
 import com.lifesense.ble.bean.kchiing.KSimpleReminder;
+import com.lifesense.ble.enums.WifiState;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DeviceFragment extends Fragment{
@@ -76,7 +83,7 @@ public class DeviceFragment extends Fragment{
 	private static final String TAG="LS-BLE";
 	
 	private View rootView;
-	private TextView deviceNameView,stateTextView,logTextView,batteryTextView,newDataTextView;
+	private TextView deviceNameView,stateTextView,logTextView,batteryTextView,newDataTextView,tvStartScanWifi,tvWifiStatus,tvResetWifi;
 	private LsDeviceInfo currentDevice;
 	private Dialog mDialog;
 	private File mImageFile;
@@ -89,7 +96,10 @@ public class DeviceFragment extends Fragment{
 	private DeviceSettingReceiver mSettingReceiver;
 	private boolean hasSportNotify;
 	private SportNotify mSportsNotify;
-	private boolean isRealtimeDataShowing;
+	private boolean isRealtimeDataShowing,isConfigWifi,wifiStatus;
+	private ListView lvWifiList;
+	private List<WifiInfo> wifiInfos;
+	private ScanWifiResultsAdapter adapter;
 	
 	/**
 	 * 自定义广播接收者
@@ -235,6 +245,13 @@ public class DeviceFragment extends Fragment{
 		{
 			//Device Connection Status
 			updateDeviceConnectState(connectState);
+
+//			mainHandler.post(new Runnable() {
+//				@Override
+//				public void run() {
+//					getDeviceWifiStatus();
+//				}
+//			});
 		}
 
 		@Override
@@ -385,13 +402,75 @@ public class DeviceFragment extends Fragment{
 			updateNewDatMessage();
 			showDeviceMeasuringData(bgData);
 		}
-		
-		
+
+		@Override
+		public void onReceiveWifiConnectState(final WifiState wifiState) {
+			super.onReceiveWifiConnectState(wifiState);
+			mainHandler.post(new Runnable() {
+				@Override
+				public void run() {
+					Log.i("wifi",wifiState.toString());
+					if (wifiState == WifiState.CONNECTED) {
+						wifiStatus = true;
+//						tvResetWifi.setVisibility(View.VISIBLE);
+					} else {
+						wifiStatus = false;
+//						tvResetWifi.setVisibility(View.GONE);
+					}
+					tvWifiStatus.setText(String.format("Wi-Fi:%s",wifiState.toString()));
+				}
+			});
+		}
+
+		@Override
+		public void onReceiveWifiScanResult(final WifiInfo wifiInfo) {
+			super.onReceiveWifiScanResult(wifiInfo);
+			Log.i("wifi",wifiInfo.toString());
+			if(wifiInfo == null || TextUtils.isEmpty(wifiInfo.getSsid())){
+				return;
+			}
+			mainHandler.post(new Runnable() {
+				@Override
+				public void run() {
+					if (wifiInfos != null) {
+						for (WifiInfo wifi : wifiInfos) {
+							if (wifi.getSsid().equalsIgnoreCase(wifiInfo.getSsid())) {
+								return;
+							}
+						}
+					}
+					wifiInfos.add(wifiInfo);
+					adapter.setWifiInfos(wifiInfos);
+					adapter.notifyDataSetChanged();
+				}
+			});
+		}
+
+		@Override
+		public void onReceiveWifiScanEnd() {
+			super.onReceiveWifiScanEnd();
+		}
+
+		@Override
+		public void onReceiveWifiConfigInfo(final int status, String ssid) {
+			super.onReceiveWifiConfigInfo(status, ssid);
+			Log.i("wifi","config wifi status : " + status + ", ssid : " + ssid);
+			mainHandler.post(new Runnable() {
+				@Override
+				public void run() {
+					if (status == 0) {
+						tvWifiStatus.setText(String.format("Wi-Fi:CONNECTED"));
+					} else {
+						tvWifiStatus.setText(String.format("Wi-Fi:DISCONNECTED"));
+					}
+				}
+			});
+		}
 	};
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) 
+			Bundle savedInstanceState)
 	{
 		rootView=inflater.inflate(R.layout.activity_device, container, false);
 		deviceNameView=(TextView)rootView.findViewById(R.id.device_name_tv);
@@ -401,6 +480,35 @@ public class DeviceFragment extends Fragment{
 		mScrollView=(ScrollView)rootView.findViewById(R.id.device_scrollView);
 		logTextView=(TextView)rootView.findViewById(R.id.device_log_text_view);
 		batteryTextView=(TextView)rootView.findViewById(R.id.device_battery_tv);
+		tvWifiStatus=(TextView)rootView.findViewById(R.id.tv_wifi_status);
+		tvWifiStatus.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				getDeviceWifiStatus();
+			}
+		});
+		tvStartScanWifi=(TextView)rootView.findViewById(R.id.tv_start_scan_wifi);
+		tvStartScanWifi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startScanWifi(v);
+            }
+        });
+		tvResetWifi=(TextView)rootView.findViewById(R.id.tv_reset_wifi);
+		tvResetWifi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resetWifi(v);
+            }
+        });
+		lvWifiList = rootView.findViewById(R.id.lv_wifi_list);
+		lvWifiList.setAdapter(adapter);
+		lvWifiList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				showInputPasswordDialog(position);
+			}
+		});
 		//init view
 		mScrollView.setBackgroundColor(Color.WHITE);
 		logTextView.setVisibility(View.VISIBLE);
@@ -453,6 +561,8 @@ public class DeviceFragment extends Fragment{
 		logMessage("onCreate");
 		mDataIndex=0;
 		super.onCreate(savedInstanceState);
+		wifiInfos = new ArrayList<>();
+		adapter = new ScanWifiResultsAdapter(this.getActivity(),wifiInfos);
 	}
 
 	@Override
@@ -483,6 +593,7 @@ public class DeviceFragment extends Fragment{
 		//清空缓存数据
 		DeviceDataUtils.clearCacheData();
 
+		isWifi();
 	}
 
 
@@ -504,6 +615,7 @@ public class DeviceFragment extends Fragment{
 		}
 		//try to connected device
 		connectDevice();
+		getDeviceWifiStatus();
 	}
 
 
@@ -1086,5 +1198,76 @@ public class DeviceFragment extends Fragment{
 			}break;
 
 		}
+	}
+
+	private void isWifi() {
+		Log.i("wifi",currentDevice.toString());
+		if (currentDevice == null || TextUtils.isEmpty(currentDevice.getMacAddress()) || !ProtocolType.A6.toString().equalsIgnoreCase(currentDevice.getProtocolType())) {
+			tvWifiStatus.setVisibility(View.GONE);
+			tvStartScanWifi.setVisibility(View.GONE);
+			tvResetWifi.setVisibility(View.GONE);
+			lvWifiList.setVisibility(View.GONE);
+			return;
+		}
+		tvWifiStatus.setVisibility(View.VISIBLE);
+		tvStartScanWifi.setVisibility(View.VISIBLE);
+		tvResetWifi.setVisibility(View.VISIBLE);
+		lvWifiList.setVisibility(View.VISIBLE);
+	}
+
+	private void getDeviceWifiStatus() {
+		if (currentDevice == null || TextUtils.isEmpty(currentDevice.getMacAddress())) {
+			return;
+		}
+//		LsBleManager.getInstance().isConfigWifi(currentDevice.getMacAddress());
+		LsBleManager.getInstance().getWifiConnectStatus(currentDevice.getMacAddress());
+	}
+	public void startScanWifi(View v) {
+		if (wifiInfos != null) {
+			wifiInfos.clear();
+			adapter.notifyDataSetChanged();
+		} else {
+			wifiInfos = new ArrayList<>();
+		}
+		if (currentDevice != null && !TextUtils.isEmpty(currentDevice.getMacAddress())) {
+			Log.i("wifi","start search wifi :" + currentDevice.getMacAddress());
+			LsBleManager.getInstance().startScanWifi(currentDevice.getMacAddress());
+		}
+	}
+
+	public void resetWifi(View v) {
+		if (currentDevice != null && !TextUtils.isEmpty(currentDevice.getMacAddress())) {
+			Log.i("wifi","reset wifi :" + currentDevice.getMacAddress());
+			LsBleManager.getInstance().resetWifi(currentDevice.getMacAddress());
+		}
+	}
+
+	private void showInputPasswordDialog(final int position) {
+		InputPasswordDialog dialog = new InputPasswordDialog.Builder(this.getActivity())
+				.setmNegativeButtonText(getString(R.string.cancel))
+				.setNegativeButtonClickListener(new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						dialog.dismiss();
+					}
+				})
+				.setmPositiveButtonText(getString(R.string.start_wifi))
+				.setOnPositiveButtonClick(new InputPasswordDialog.OnPositiveButtonClick() {
+					@Override
+					public void onCommit(Dialog dialog1,String str) {
+						if (TextUtils.isEmpty(str) || str.trim().length() < 8) {
+							Toast.makeText(DeviceFragment.this.getActivity(),getString(R.string.wifi_password_error_toast_1),Toast.LENGTH_SHORT).show();
+							return;
+						}
+						dialog1.dismiss();
+						if (currentDevice == null || TextUtils.isEmpty(currentDevice.getMacAddress())) {
+							return;
+						}
+						Log.i("wifi","config wifi info : " + wifiInfos.get(position).getSsid() + ",password : " + str );
+						LsBleManager.getInstance().startConfigWifi(currentDevice.getMacAddress(),str,wifiInfos.get(position).getBssid(),wifiInfos.get(position).getStatus());
+					}
+				})
+				.create();
+		dialog.show();
 	}
 }
