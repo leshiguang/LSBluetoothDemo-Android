@@ -71,8 +71,39 @@
                             android:textColor="#CD6839"
                             android:textSize="12sp"
                             android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_wifi_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wifi:"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/device_connect_state_tv"
+                            android:layout_centerVertical="true"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/tv_start_scan_wifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scan_wifi"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignBaseline="@id/tv_wifi_status"
+                            android:layout_toRightOf="@id/tv_wifi_status"
+                            android:layout_centerVertical="true"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/tv_reset_wifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reset_wifi"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignBaseline="@id/tv_wifi_status"
+                            android:layout_toRightOf="@id/tv_start_scan_wifi"
+                            android:layout_centerVertical="true"
+                            android:textSize="12sp"/>
                     </RelativeLayout>
                 </LinearLayout>
+
 
                 <TextView
                     android:id="@+id/new_data_text_view"
@@ -95,6 +126,16 @@
             </RelativeLayout>
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/common_bg_gray" />
+        <ListView
+            android:id="@+id/lv_wifi_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"></ListView>
         <View
             android:layout_width="match_parent"
             android:layout_height="15dp"
