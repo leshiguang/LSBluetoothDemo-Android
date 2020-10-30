@@ -1,0 +1,101 @@
+
+vsquid:S2293Ã	"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+Nsquid:S2696Ç"6Make the enclosing method "static" or remove this set.(€ÏÎ¹
+osquid:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(°îé§úÿÿÿÿ
+vsquid:S2293í"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+qsquid:S2293§	"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜ş¤º
+vsquid:S2293Å"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+asquid:S1192’"IUse already-defined constant 'TAG' instead of duplicating its value here.(­çÏ
+Lsquid:S1066"/Merge this if statement with the enclosing one.(éÏ—Ñùÿÿÿÿ
+vsquid:S2293²"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+qsquid:S2293ß"YReplace the type specification in this constructor call with the diamond operator ("<>").(ñí…Ü
+hsquid:CommentedOutCodeLineõ"<This block of commented-out lines of code should be removed.(œƒ™½şÿÿÿÿ
+Lsquid:S1066Ê"/Merge this if statement with the enclosing one.(‡€«¾øÿÿÿÿ
+csquid:CommentedOutCodeLineÇ"<This block of commented-out lines of code should be removed.(€¢÷é
+osquid:S3776”"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(Â‡³–şÿÿÿÿ
+hsquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(¬ú‡îøÿÿÿÿ
+asquid:S2583ı"DChange this condition so that it does not always evaluate to "false"(Ô½Ëùÿÿÿÿ
+Tsquid:S1854×"<Remove this useless assignment to local variable "errorMsg".(œ»ñá
+qsquid:S2293‰"YReplace the type specification in this constructor call with the diamond operator ("<>").(ùÁ‰Â
+asquid:S2583ò"DChange this condition so that it does not always evaluate to "false"(Ô½Ëùÿÿÿÿ
+qsquid:S2293ä"YReplace the type specification in this constructor call with the diamond operator ("<>").(ìÂĞŞ
+vsquid:S2293Ü"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+csquid:CommentedOutCodeLineˆ	"<This block of commented-out lines of code should be removed.(É²”¸
+isquid:S3776Ê"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(’û—~
+Lsquid:S1066°
+"/Merge this if statement with the enclosing one.(‡€«¾øÿÿÿÿ
+osquid:S3776Æ
+"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(ã´„¢ÿÿÿÿÿ
+vsquid:S2293÷"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+vsquid:S2293Ñ
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+asquid:S2583ª"DChange this condition so that it does not always evaluate to "false"(Ô½Ëùÿÿÿÿ
+u
+squid:S135Ò"YReduce the total number of break and continue statements in this loop to use at most one.(îØúÿÿÿÿ
+_squid:S1192Î"GDefine a constant instead of duplicating this literal "\t >> " 3 times.(óÜ”†
+csquid:CommentedOutCodeLine‚	"<This block of commented-out lines of code should be removed.(®¡¦
+vsquid:S2293˜"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸ñÑşÿÿÿÿ
+qsquid:S2293æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(•…çÊ
+vsquid:S2293¢"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬Ö‹áıÿÿÿÿ
+Tsquid:S1068l"=Remove this unused "FORMAT_STRING_SIMPLE_DATE" private field.(ÛÅ­ã
+Gsquid:S1066Û"/Merge this if statement with the enclosing one.(µ˜‹Æ
+Fsquid:S1481ê")Remove this unused "type" local variable.(ı…Ğëùÿÿÿÿ
+vsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(áÇúúÿÿÿÿ
+vsquid:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+[squid:S1155š">Use isEmpty() to check whether the collection is empty or not.(ö•ûøÿÿÿÿÿ
+bsquid:CommentedOutCodeLineİ"<This block of commented-out lines of code should be removed.(“™Î0
+Qsquid:S1118i":Add a private constructor to hide the implicit public one.(“ˆºµ
+osquid:S3776®"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ğÎ„ûúÿÿÿÿ
+fsquid:S2259í"IA "NullPointerException" could be thrown; "sportNotify" is nullable here.(¡Å£ùÿÿÿÿ
+csquid:CommentedOutCodeLineğ"<This block of commented-out lines of code should be removed.(‘Ìµš
+vsquid:S2293Ã"YReplace the type specification in this constructor call with the diamond operator ("<>").(û…Éûÿÿÿÿ
+qsquid:S2293Ó"YReplace the type specification in this constructor call with the diamond operator ("<>").(ñí…Ü
+csquid:CommentedOutCodeLineë"<This block of commented-out lines of code should be removed.(¶ê…Ã
+vsquid:S2293å"YReplace the type specification in this constructor call with the diamond operator ("<>").(·İ¢—ÿÿÿÿÿ
+squid:S1186­"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ê¥¾àûÿÿÿÿ
+vsquid:S2293Ğ"YReplace the type specification in this constructor call with the diamond operator ("<>").(õØş–şÿÿÿÿ
+vsquid:S2293À"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÆÔ¢™øÿÿÿÿ
+csquid:CommentedOutCodeLineÁ"<This block of commented-out lines of code should be removed.(îû
+Vsquid:S1155Ë">Use isEmpty() to check whether the collection is empty or not.(ÆŒšï
+qsquid:S2293¸"YReplace the type specification in this constructor call with the diamond operator ("<>").(•…çÊ
+Ysquid:S1126Æ"AReplace this if-then-else statement by a single return statement.(Ä“â¢
+hsquid:CommentedOutCodeLineÀ"<This block of commented-out lines of code should be removed.(ÏéÙ¿øÿÿÿÿ
+Lsquid:S1066€"/Merge this if statement with the enclosing one.(Ò”¬‰úÿÿÿÿ
+isquid:S3776Õ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ï„›a
+csquid:CommentedOutCodeLineÍ"<This block of commented-out lines of code should be removed.(â»½Ç
+csquid:CommentedOutCodeLineÕ"<This block of commented-out lines of code should be removed.(ÙÛÌô
+™squid:S1186©"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«û³±
+csquid:CommentedOutCodeLineÊ"<This block of commented-out lines of code should be removed.(°——¶
+Osquid:S1854İ"8Remove this useless assignment to local variable "time".(İ´Ò3
+vsquid:S2293û"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+csquid:CommentedOutCodeLineæ"<This block of commented-out lines of code should be removed.(Ú°à¬
+\squid:UnusedPrivateMethodä"6Remove this unused private "isAerobicExercise" method.(øÊÊî
+Csquid:S1168‡"+Return an empty collection instead of null.(¥¹ï
+Qsquid:S3516"9Refactor this method to not always return the same value.(Ê÷¹
+asquid:S2583"DChange this condition so that it does not always evaluate to "false"(Ô½Ëùÿÿÿÿ
+Lsquid:S1066æ	"/Merge this if statement with the enclosing one.(‡€«¾øÿÿÿÿ
+qsquid:S2293¦"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜¦ß
+hsquid:CommentedOutCodeLine‹	"<This block of commented-out lines of code should be removed.(Ö‡¡üÿÿÿÿ
+vsquid:S2293¶"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+Lsquid:S1066Ô"/Merge this if statement with the enclosing one.(‡€«¾øÿÿÿÿ
+csquid:S2259"FA "NullPointerException" could be thrown; "lsDevice" is nullable here.(¤…íèùÿÿÿÿ
+Lsquid:S1066û"/Merge this if statement with the enclosing one.(‡€«¾øÿÿÿÿ
+Esquid:S1481×"-Remove this unused "errorMsg" local variable.(œ»ñá
+Ysquid:UnusedPrivateMethodú"3Remove this unused private "getCurrentTime" method.(ğÆä
+gsquid:UnusedPrivateMethod»"ARemove this unused private "showTitleAndTimeChoiceDialog" method.(è²ûï
+qsquid:S2293Ì"YReplace the type specification in this constructor call with the diamond operator ("<>").(ª™¢©
+vsquid:S2293Á"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+Vsquid:S1155†">Use isEmpty() to check whether the collection is empty or not.(ÆŒšï
+vsquid:S2293û"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+vsquid:S2293†"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ¤¹Ÿûÿÿÿÿ
+\squid:S3398¦"?Move this method into the anonymous class declared at line 178.(ô§Óÿÿÿÿÿ
+qsquid:S2293œ"YReplace the type specification in this constructor call with the diamond operator ("<>").(•…çÊ
+hsquid:CommentedOutCodeLine¾"<This block of commented-out lines of code should be removed.(éØÁ©ÿÿÿÿÿ
+@squid:S1481İ")Remove this unused "time" local variable.(İ´Ò3
+Hsquid:S1172î"0Remove this unused method parameter "deviceMac".(Ã¥
+csquid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(£ù¸¾
+hsquid:CommentedOutCodeLineÑ"<This block of commented-out lines of code should be removed.(ß‰ûûÿÿÿÿ
+asquid:S1192Ú"IDefine a constant instead of duplicating this literal ";byte >>" 4 times.(¬Îš
+osquid:S3776»	"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Å…–øÿÿÿÿ

@@ -72,7 +72,7 @@ import com.lifesense.ble.bean.constant.PacketProfile;
 import com.lifesense.ble.bean.constant.ProtocolType;
 import com.lifesense.ble.bean.kchiing.KAppointmentReminder;
 import com.lifesense.ble.bean.kchiing.KSimpleReminder;
-import com.lifesense.ble.enums.WifiState;
+import com.lifesense.ble.bean.constant.WifiState;
 
 import java.io.File;
 import java.util.ArrayList;

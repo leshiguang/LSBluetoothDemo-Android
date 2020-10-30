@@ -1,0 +1,24 @@
+
+asquid:UselessImportCheck("8Remove this unused import 'com.bluetooth.demo.R.layout'.(¨ß¢Ëûÿÿÿÿ
+\squid:UselessImportCheck*"8Remove this unused import 'com.bluetooth.demo.R.string'.(û±¤«
+Ysquid:UselessImportCheck&"6Remove this unused import 'com.bluetooth.demo.R.anim'.(‚®¿
+Vsquid:S1155³">Use isEmpty() to check whether the collection is empty or not.(ò¶Ö
+Usquid:S1155Ì">Use isEmpty() to check whether the collection is empty or not.(¥äÅu
+Usquid:S1155ù">Use isEmpty() to check whether the collection is empty or not.(¥äÅu
+Vsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(’²çƒ
+Usquid:S1155Â">Use isEmpty() to check whether the collection is empty or not.(¥äÅu
+Usquid:S1155á">Use isEmpty() to check whether the collection is empty or not.(¥äÅu
+vsquid:S1450M"_Remove the "fragmentRootView" field and declare it as a local variable in the relevant methods.(†îÕ¾
+~squid:S1450R"bRemove the "mAppVersionTextView" field and declare it as a local variable in the relevant methods.(©´‘åùÿÿÿÿ
+8squid:S1170G"!Make this final field static too.(§Ë«
+vsquid:S00116G"^Rename this field "CELL_DEFAULT_HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ë«
+Nsquid:S1135w"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+Osquid:S1135Š"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+vsquid:S2293±"YReplace the type specification in this constructor call with the diamond operator ("<>").(øäŒÿÿÿÿÿ
+@squid:S1185Ö"(Remove this method to simply inherit it.(›š‡¨
+™squid:S1186„"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦Œœ¢
+U
+squid:S106™"9Replace this use of System.out or System.err by a logger.(„Ì»®üÿÿÿÿ
+Lsquid:EmptyStatementUsageCheck¹"Remove this empty statement.(ôŸìúÿÿÿÿ
+Lsquid:S1068P"5Remove this unused "isConnectedDevice" private field.(ÿ¿ê
+csquid:CommentedOutCodeLineï"<This block of commented-out lines of code should be removed.(¢û¤

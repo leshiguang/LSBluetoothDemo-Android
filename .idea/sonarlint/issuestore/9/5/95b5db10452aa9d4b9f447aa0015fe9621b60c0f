@@ -1,0 +1,38 @@
+
+Psquid:S1659]"4Declare "showScanFilterTextView" on a separate line.(ö†º²úÿÿÿÿ
+vsquid:S1450e"ZRemove the "mDeviceList" field and declare it as a local variable in the relevant methods.(¤øŠğøÿÿÿÿ
+qsquid:S2293›"YReplace the type specification in this constructor call with the diamond operator ("<>").(Í‰íá
+hsquid:CommentedOutCodeLine»"<This block of commented-out lines of code should be removed.(¶æ½ıÿÿÿÿ
+bsquid:UnusedPrivateMethod÷"7Remove this unused private "getWifiNetworkSSID" method.(¬ş¬×şÿÿÿÿ
+Isquid:S1068S"-Remove this unused "WIFI_SSID" private field.(Óé€‰úÿÿÿÿ
+Fsquid:S1172«".Remove this unused method parameter "address".(–ë©
+Csquid:S1481‹"&Remove this unused "i" local variable.(ùó›Ìøÿÿÿÿ
+csquid:CommentedOutCodeLine¬"<This block of commented-out lines of code should be removed.(å–™Ÿ
+Fsquid:S1940ğ")Use the opposite operator ("!=") instead.(¡†îõıÿÿÿÿ
+Esquid:S1185"(Remove this method to simply inherit it.(»ŒÇåùÿÿÿÿ
+P
+squid:S106¶"9Replace this use of System.out or System.err by a logger.(ã‘©Ÿ
+csquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(Ô†Ÿ
+rsquid:S2068T"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(“üŠúÿÿÿÿ
+[squid:S1155Ä">Use isEmpty() to check whether the collection is empty or not.(‚àôŞûÿÿÿÿ
+@squid:S1148û"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+^squid:S1126ğ"AReplace this if-then-else statement by a single return statement.(¡†îõıÿÿÿÿ
+qsquid:S2293Ç"YReplace the type specification in this constructor call with the diamond operator ("<>").(½åàè
+dsquid:S1192´"GDefine a constant instead of duplicating this literal "LS-BLE" 3 times.(†¹±“şÿÿÿÿ
+Vsquid:S1155±">Use isEmpty() to check whether the collection is empty or not.(õ¢Ò¾
+qsquid:S2293ô"YReplace the type specification in this constructor call with the diamond operator ("<>").(¶Çªê
+vsquid:S1149†"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(£†ùA
+squid:S1186ì"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¥í»¬ûÿÿÿÿ
+Msquid:S1068T"1Remove this unused "WIFI_PASSWORD" private field.(“üŠúÿÿÿÿ
+gsquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(Óé€‰úÿÿÿÿ
+P
+squid:S106ê"9Replace this use of System.out or System.err by a logger.(¦áº
+zsquid:S1450b"^Remove the "mScanDeviceType" field and declare it as a local variable in the relevant methods.(Œ³éÛúÿÿÿÿ
+psquid:S2293ö"YReplace the type specification in this constructor call with the diamond operator ("<>").(®”¦=
+nsquid:S1450Z"WRemove the "rootView" field and declare it as a local variable in the relevant methods.(ÅáÊ
+bsquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(û¶©E
+dsquid:S1192‘"GDefine a constant instead of duplicating this literal "Prompt" 4 times.(¾ÍËúÿÿÿÿ
+[squid:S1155Í">Use isEmpty() to check whether the collection is empty or not.(§ˆìÌüÿÿÿÿ
+Ksquid:S1068i"4Remove this unused "isPairingProcess" private field.(ç€­£
+tsquid:S1450c"]Remove the "mBroadcastType" field and declare it as a local variable in the relevant methods.(ŠåÇ™
+[squid:S1155µ">Use isEmpty() to check whether the collection is empty or not.(ª‡†Õúÿÿÿÿ

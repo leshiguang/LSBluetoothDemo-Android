@@ -1,0 +1,69 @@
+
+dsquid:S1192µ"GDefine a constant instead of duplicating this literal "Prompt" 4 times.(Ä›³Ñøÿÿÿÿ
+`squid:S1192Õ"IUse already-defined constant 'TAG' instead of duplicating its value here.(¥ØR
+Esquid:S1199è"-Extract this nested code block into a method.(ÿ¼›¿
+Jsquid:S1199ì"-Extract this nested code block into a method.(¸‚€œùÿÿÿÿ
+Esquid:S1199ğ"-Extract this nested code block into a method.(ı½í¦
+Esquid:S1199ô"-Extract this nested code block into a method.(å…¾Ò
+Jsquid:S1199ø"-Extract this nested code block into a method.(ÿê×ûÿÿÿÿ
+Esquid:S1199ü"-Extract this nested code block into a method.(İÔ‡Œ
+Esquid:S1199€"-Extract this nested code block into a method.(àãİ¢
+Esquid:S1199„"-Extract this nested code block into a method.(³´Ó
+Jsquid:S1199ˆ"-Extract this nested code block into a method.(Ù››ïÿÿÿÿÿ
+Esquid:S1199Œ"-Extract this nested code block into a method.(¾¡ø·
+Esquid:S1199"-Extract this nested code block into a method.(‡ÀÛÍ
+Esquid:S1199”"-Extract this nested code block into a method.(âû«ø
+Esquid:S1199˜"-Extract this nested code block into a method.(¥¼ûº
+Esquid:S1199œ"-Extract this nested code block into a method.(¶·ƒŒ
+Esquid:S1199 "-Extract this nested code block into a method.(¥Š¾†
+Esquid:S1199¤"-Extract this nested code block into a method.(áÂûã
+Esquid:S1199¨"-Extract this nested code block into a method.(Å‰² 
+Jsquid:S1199¬"-Extract this nested code block into a method.(Â¡°ùÿÿÿÿ
+Esquid:S1199°"-Extract this nested code block into a method.(Ô¥«À
+Jsquid:S1199¿"-Extract this nested code block into a method.(õŞ¢ºıÿÿÿÿ
+Jsquid:S1199Ã"-Extract this nested code block into a method.(÷ã™ÿüÿÿÿÿ
+Jsquid:S1199Ï"-Extract this nested code block into a method.(Î÷üªøÿÿÿÿ
+Jsquid:S1199Ó"-Extract this nested code block into a method.(ÆœğÂúÿÿÿÿ
+Jsquid:S1199Ø"-Extract this nested code block into a method.(®–Ñ°ÿÿÿÿÿ
+Dsquid:S1199Ü"-Extract this nested code block into a method.(ºÈ_
+Jsquid:S1199à"-Extract this nested code block into a method.(ŸÃãÀûÿÿÿÿ
+Jsquid:S1199ä"-Extract this nested code block into a method.(”ƒä½ûÿÿÿÿ
+Jsquid:S1199è"-Extract this nested code block into a method.(‡¹ô˜ùÿÿÿÿ
+Esquid:S1199õ"-Extract this nested code block into a method.(ëµáã
+Jsquid:S1199ù"-Extract this nested code block into a method.(™Äµ•úÿÿÿÿ
+Jsquid:S1199ı"-Extract this nested code block into a method.(îœÄ­ûÿÿÿÿ
+Esquid:S1199"-Extract this nested code block into a method.(¥¸’õ
+Esquid:S1199…"-Extract this nested code block into a method.(êªçû
+Esquid:S1199‰"-Extract this nested code block into a method.(úİıº
+Esquid:S1199"-Extract this nested code block into a method.(à¯ìØ
+Esquid:S1199‘"-Extract this nested code block into a method.(³Ãø¢
+Jsquid:S1199–"-Extract this nested code block into a method.(€—Ãôıÿÿÿÿ
+Jsquid:S1199š"-Extract this nested code block into a method.(–ÜÓ·ùÿÿÿÿ
+Jsquid:S1199Ÿ"-Extract this nested code block into a method.(³÷õêşÿÿÿÿ
+Esquid:S1199£"-Extract this nested code block into a method.(ŞÜı¤
+Jsquid:S1199§"-Extract this nested code block into a method.(§³Œÿÿÿÿÿ
+Jsquid:S1199ª"-Extract this nested code block into a method.(®°Ëÿÿÿÿÿ
+Jsquid:S1199­"-Extract this nested code block into a method.(‹éÅüÿÿÿÿ
+Jsquid:S1199°"-Extract this nested code block into a method.(ÍßŸÛüÿÿÿÿ
+Jsquid:S1199´"-Extract this nested code block into a method.(şŞ‡Àşÿÿÿÿ
+`squid:S2583¶"CChange this condition so that it does not always evaluate to "true"(–äôıÿÿÿÿ
+isquid:S2259Ü"QA "NullPointerException" could be thrown; "authorizationResult" is nullable here.(¹Çøø
+Vsquid:S1155Ú">Use isEmpty() to check whether the collection is empty or not.(ùü
+[squid:S1155¿">Use isEmpty() to check whether the collection is empty or not.(øßÀ§ùÿÿÿÿ
+Bsquid:S1659O"+Declare "stateTextView" on a separate line.(Õòºë
+@squid:S1659O")Declare "logTextView" on a separate line.(Õòºë
+Dsquid:S1659O"-Declare "batteryTextView" on a separate line.(Õòºë
+Dsquid:S1659O"-Declare "newDataTextView" on a separate line.(Õòºë
+nsquid:S1450N"WRemove the "rootView" field and declare it as a local variable in the relevant methods.(ÅáÊ
+qsquid:S1450U"ZRemove the "mScrollView" field and declare it as a local variable in the relevant methods.(¬Ô¢ç
+vsquid:S1149à"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(£†ùA
+3squid:S3626°"Remove this redundant jump.(ûÁİ…
+Isquid:S1172‹",Remove this unused method parameter "title".(»ùÍøÿÿÿÿ
+squid:S1186“"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(áÄÔ€ÿÿÿÿÿ
+Q"squid:SwitchLastCaseIsDefaultCheckæ""Add a default case to this switch.(âĞ’Ù
+Zsquid:S1479æ"BReduce the number of non-empty switch cases from 45 to at most 30.(âĞ’Ù
+Wsquid:S3398 "?Move this method into the anonymous class declared at line 231.(¬÷êÄ
+Isquid:S1068Z"2Remove this unused "hasSportNotify" private field.(ä‡
+csquid:CommentedOutCodeLine¾"<This block of commented-out lines of code should be removed.(äÈá
+csquid:CommentedOutCodeLineÍ"<This block of commented-out lines of code should be removed.(“ƒ•ü
+bsquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(Ï™×
